@@ -91,6 +91,18 @@ var MainScene = /** @class */ (function (_super) {
     }
     MainScene.prototype.componentDidMount = function () {
         return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.requestData()];
+                    case 1:
+                        _a.sent();
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    MainScene.prototype.requestData = function () {
+        return __awaiter(this, void 0, void 0, function () {
             var gitHubServ, result;
             return __generator(this, function (_a) {
                 switch (_a.label) {
@@ -103,13 +115,6 @@ var MainScene = /** @class */ (function (_super) {
                         this.setState({ listUser: result ? result : [] });
                         return [2 /*return*/];
                 }
-            });
-        });
-    };
-    MainScene.prototype.requestData = function () {
-        return __awaiter(this, void 0, void 0, function () {
-            return __generator(this, function (_a) {
-                return [2 /*return*/];
             });
         });
     };

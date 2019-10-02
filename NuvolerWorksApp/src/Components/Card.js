@@ -19,7 +19,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var react_1 = __importDefault(require("react"));
 var react_native_1 = require("react-native");
 var Colors_1 = require("../Styles/Colors");
-var emptyAvatar = require('../Assets/EmptyAvatar.jpeg');
+var emptyAvatar = require('../Assets/images/EmptyAvatar.jpeg');
+var RightArrow = require('../Assets/images/RightArrow.png');
 var Font_tsx_1 = require("../Styles/Font.tsx");
 var Card = /** @class */ (function (_super) {
     __extends(Card, _super);
@@ -34,11 +35,13 @@ var Card = /** @class */ (function (_super) {
         var _this = this;
         return (react_1.default.createElement(react_native_1.View, { style: styles.CardContainer },
             react_1.default.createElement(react_native_1.TouchableOpacity, { onPress: (function () { return _this.props.onClick; }) },
-                react_1.default.createElement(react_native_1.View, { style: styles.RowStatistics },
+                react_1.default.createElement(react_native_1.View, { style: styles.MainRow },
                     react_1.default.createElement(react_native_1.View, { style: styles.leftSizeView },
                         react_1.default.createElement(react_native_1.Image, { source: { uri: this.props.user.avatar_url }, style: styles.ImgStyle }),
-                        react_1.default.createElement(react_native_1.Text, { style: styles.textTitleDescription }),
-                        react_1.default.createElement(react_native_1.Text, { style: styles.textTitleDescription }, this.props.user.login))))));
+                        react_1.default.createElement(react_native_1.View, { style: styles.leftSizeView },
+                            react_1.default.createElement(react_native_1.Text, { style: styles.textTitleDescription }, "Username: "),
+                            react_1.default.createElement(react_native_1.Text, { style: styles.textTitleDescription }, this.props.user.login))),
+                    react_1.default.createElement(react_native_1.Image, { source: RightArrow, style: styles.ImgStyle })))));
     };
     return Card;
 }(react_1.default.Component));
@@ -55,10 +58,7 @@ var styles = react_native_1.StyleSheet.create({
     CardContainerSelcted: {
         margin: 5,
         flex: 1,
-        height: '15%',
-        backgroundColor: ' -webkit-linear-gradient(left, rgba(255,175,75,1) 0%, rgba(241,111,92,1) 39%, rgba(255,175,75,1) 62%, rgba(255,175,75,1) 65%, rgba(255,146,10,1) 89%, rgba(255,146,10,1) 100%',
         flexDirection: 'column',
-        borderRadius: 10,
     },
     Img: {
         width: '5%',
@@ -68,7 +68,7 @@ var styles = react_native_1.StyleSheet.create({
         margin: 20,
         flexDirection: 'row'
     },
-    RowStatistics: {
+    MainRow: {
         margin: 20,
         flexDirection: 'row',
         justifyContent: 'space-between',
@@ -76,6 +76,7 @@ var styles = react_native_1.StyleSheet.create({
     },
     leftSizeView: {
         flexDirection: 'row',
+        alignItems: 'center',
         justifyContent: 'flex-start'
     },
     rightSizeView: {
@@ -85,6 +86,10 @@ var styles = react_native_1.StyleSheet.create({
     ImgStyle: {
         width: 40,
         height: 40
+    },
+    ImgStyleArrow: {
+        height: 40,
+        width: 40,
     },
     textTitleDescription: {
         fontWeight: Font_tsx_1.FONT_TITLE_WEIGHT,

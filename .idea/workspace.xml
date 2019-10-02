@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7394f5d7-b051-41ac-8cdb-75674d794857" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Assets/EmptyAvatar.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Styles/Font.tsx.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Utils/UtilsImage.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Assets/images/RightArrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Assets/images/RightArrow.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Components/SearchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Components/SearchBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Components/SearchBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Components/SearchBar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Network/GitHubServices.js" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Network/GitHubServices.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Network/GitHubServices.ts" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Network/GitHubServices.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Assets/EmptyAvatar.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Assets/images/EmptyAvatar.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Components/Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Components/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Components/Card.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/MainScene.js" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/MainScene.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/MainScene.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/MainScene.tsx" afterDir="false" />
     </list>
@@ -46,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Card.tsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Card.tsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NuvolerWorksApp/src/Components/Card.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="41" column="71" lean-forward="true" selection-start-line="41" selection-start-column="71" selection-end-line="41" selection-end-column="71" />
+            <state relative-caret-position="266">
+              <caret line="111" column="13" selection-start-line="111" selection-start-column="13" selection-end-line="111" selection-end-column="13" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -85,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainScene.tsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainScene.tsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/MainScene.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="187">
+              <caret line="90" column="5" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -174,8 +172,8 @@
         <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Components/SearchBar.tsx" />
         <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Network/GitHubServices.ts" />
         <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Utils/UtilsImage.ts" />
-        <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Components/Card.tsx" />
         <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/MainScene.tsx" />
+        <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Components/Card.tsx" />
       </list>
     </option>
   </component>
@@ -227,6 +225,21 @@
               <item name="nuovlar-works-test" type="462c0819:PsiDirectoryNode" />
               <item name="NuvolerWorksApp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nuovlar-works-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nuovlar-works-test" type="462c0819:PsiDirectoryNode" />
+              <item name="NuvolerWorksApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Assets" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nuovlar-works-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nuovlar-works-test" type="462c0819:PsiDirectoryNode" />
+              <item name="NuvolerWorksApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -259,6 +272,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/NuvolerWorksApp/src/Assets/images" />
+      <recent name="$PROJECT_DIR$/NuvolerWorksApp/src/Assets" />
       <recent name="$PROJECT_DIR$/NuvolerWorksApp/src/assets" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -330,12 +345,12 @@
       <option name="presentableId" value="Default" />
       <updated>1570013962324</updated>
       <workItem from="1570013963633" duration="11887000" />
-      <workItem from="1570035460099" duration="15591000" />
+      <workItem from="1570035460099" duration="17744000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27478000" />
+    <option name="totallyTimeSpent" value="29631000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -348,9 +363,9 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32965517" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32965517" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22758621" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22758621" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32827586" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32827586" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -505,7 +520,7 @@
     <entry file="file://$PROJECT_DIR$/NuvolerWorksApp/.buckconfig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/NuvolerWorksApp/src/Assets/EmptyAvatar.jpeg">
+    <entry file="file://$PROJECT_DIR$/NuvolerWorksApp/src/Assets/images/EmptyAvatar.jpeg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/NuvolerWorksApp/src/Styles/Colors.tsx">
@@ -560,20 +575,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NuvolerWorksApp/src/Components/Card.tsx">
+    <entry file="file://$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/MainScene.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="41" column="71" lean-forward="true" selection-start-line="41" selection-start-column="71" selection-end-line="41" selection-end-column="71" />
+        <state relative-caret-position="187">
+          <caret line="90" column="5" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/MainScene.tsx">
+    <entry file="file://$PROJECT_DIR$/NuvolerWorksApp/src/Components/Card.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="266">
+          <caret line="111" column="13" selection-start-line="111" selection-start-column="13" selection-end-line="111" selection-end-column="13" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

@@ -30,21 +30,21 @@ export class MainScene extends React.Component<Props, State> {
     }
 
     async componentDidMount(){
-        let gitHubServ = new GitHubServices();
 
-        //let result = await gitHubServ.getUsers("q=tom+repos:%3E42+followers:%3E1000");
-        let result = await gitHubServ.getUsers("q=language:typeScript");
+                await this.requestData();
 
-
-        this.setState({filteredList:result?result:[]});
-        this.setState({listUser:result?result:[]});
-
-
-
-    }
+     }
 
      async requestData(){
 
+         let gitHubServ = new GitHubServices();
+
+         //let result = await gitHubServ.getUsers("q=tom+repos:%3E42+followers:%3E1000");
+         let result = await gitHubServ.getUsers("q=language:typeScript");
+
+
+         this.setState({filteredList:result?result:[]});
+         this.setState({listUser:result?result:[]});
 
 
     }
@@ -88,7 +88,7 @@ export class MainScene extends React.Component<Props, State> {
      }
 
 
-    renderItem = (item:UserGitHub) => <Card
+     renderItem = (item:UserGitHub) => <Card
         user={item}
         onClick={this.onClick}
     />
