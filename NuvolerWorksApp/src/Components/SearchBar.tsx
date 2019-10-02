@@ -16,7 +16,8 @@ interface State {
 
 }
 
-export class SearchBar extends React.Component<Props, State> {
+export class
+SearchBar extends React.Component<Props, State> {
     constructor(props: Props) {
         super(props);
 
@@ -32,7 +33,9 @@ export class SearchBar extends React.Component<Props, State> {
     render() {
         return (
             <View style={styles.root}>
-                 <TextInput  style={styles.TextInput} onChangeText={text => this.filterResultsCallback( text )} >
+                 <TextInput  style={styles.TextInput}
+                             onChangeText={text => this.filterResultsCallback( text )}
+                 >
 
         </TextInput>
 

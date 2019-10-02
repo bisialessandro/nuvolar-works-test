@@ -2,6 +2,8 @@ import React from 'react';
 import {SearchBar} from '../Components/SearchBar';
 import {UserGitHub} from "../Model/UserGitHub";
 import {GitHubServices} from "../Network/GitHubServices";
+import {Animated} from "react-native";
+import parallel = Animated.parallel;
 const axios = require('axios');
 
 export interface Props {
@@ -11,7 +13,7 @@ export interface Props {
 
 interface State {
 
-    list: Array<UserGitHub>;
+    listUser: Array<UserGitHub>;
     filteredList:Array<UserGitHub>
 }
 
@@ -19,17 +21,11 @@ export class MainScene extends React.Component<Props, State> {
      constructor(props: Props) {
         super(props);
 
-       /* if (props.list==null) {
-            throw new Error('No user were found! ');
-        }*/
 
-
-
-
-      /*  this.state = {
-            list:[UserGitHub.("{\"login\":\"Apple\"}"),JSON.parse("{\"login\":\"Orange\"}"), JSON.parse("{\"login\":\"Banana\"}")] ,
-            filteredList:[JSON.parse("{\"login\":\"Apple\"}"),JSON.parse("{\"login\":\"Orange\"}"), JSON.parse("{\"login\":\"Banana\"}")]
-        };*/
+       this.state = {
+            listUser:[],
+            filteredList:[]
+        };
 
     }
 
@@ -39,20 +35,40 @@ export class MainScene extends React.Component<Props, State> {
 
          let result = await gitHubServ.getUsers("q=tom+repos:%3E42+followers:%3E1000");
 
+
+         this.setState({filteredList:result?result:[]});
+         this.setState({listUser:result?result:[]});
+
+
          console.log("result",result);
+    }
+
+    filterUser = (value:string) => {
+          this.state.listUser.forEach(userGitHub => {
+             return userGitHub.login.indexOf(value)>0&&userGitHub;
+         });
+
     }
 
     onChangeText = (value:string) => {
 
         console.log("prova",value.toString());
-       /* let resultList = this.state.list.map(function(value){
-                    //return value.parse("login");
-        })
-*/
-        //console.log("result",resultList);
+
+        if(value===""){
+
+            this.setState({filteredList: this.state.listUser});
+
+        }else {
+            /* let resultList = this.state.list.map(function(value){
+                         //return value.parse("login");
+             })
+     */
+            console.log("result", this.filterUser(value));
 
 
-        this.setState({filteredList: this.state.filteredList});
+            this.setState({filteredList: this.state.filteredList});
+
+        }
     }
 
 

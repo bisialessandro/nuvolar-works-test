@@ -303,7 +303,7 @@ export class UserGitHub {
 
 
     public toUser(data: object[]) {
-        const user: UserGitHub[] = [];
+        const user: Array<UserGitHub> = [];
         for (const d of data) {
             user.push(this.createUser(d));
         }

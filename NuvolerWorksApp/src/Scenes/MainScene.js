@@ -60,23 +60,30 @@ var MainScene = /** @class */ (function (_super) {
     __extends(MainScene, _super);
     function MainScene(props) {
         var _this = _super.call(this, props) || this;
+        _this.filterUser = function (value) {
+            _this.state.listUser.forEach(function (userGitHub) {
+                return userGitHub.login.indexOf(value) > 0 && userGitHub;
+            });
+        };
         _this.onChangeText = function (value) {
             console.log("prova", value.toString());
-            /* let resultList = this.state.list.map(function(value){
-                         //return value.parse("login");
-             })
-     */
-            //console.log("result",resultList);
-            _this.setState({ filteredList: _this.state.filteredList });
+            if (value === "") {
+                _this.setState({ filteredList: _this.state.listUser });
+            }
+            else {
+                /* let resultList = this.state.list.map(function(value){
+                             //return value.parse("login");
+                 })
+         */
+                console.log("result", _this.filterUser(value));
+                _this.setState({ filteredList: _this.state.filteredList });
+            }
+        };
+        _this.state = {
+            listUser: [],
+            filteredList: []
         };
         return _this;
-        /* if (props.list==null) {
-             throw new Error('No user were found! ');
-         }*/
-        /*  this.state = {
-              list:[UserGitHub.("{\"login\":\"Apple\"}"),JSON.parse("{\"login\":\"Orange\"}"), JSON.parse("{\"login\":\"Banana\"}")] ,
-              filteredList:[JSON.parse("{\"login\":\"Apple\"}"),JSON.parse("{\"login\":\"Orange\"}"), JSON.parse("{\"login\":\"Banana\"}")]
-          };*/
     }
     MainScene.prototype.componentDidMount = function () {
         return __awaiter(this, void 0, void 0, function () {
@@ -88,6 +95,8 @@ var MainScene = /** @class */ (function (_super) {
                         return [4 /*yield*/, gitHubServ.getUsers("q=tom+repos:%3E42+followers:%3E1000")];
                     case 1:
                         result = _a.sent();
+                        this.setState({ filteredList: result ? result : [] });
+                        this.setState({ listUser: result ? result : [] });
                         console.log("result", result);
                         return [2 /*return*/];
                 }
