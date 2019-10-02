@@ -1,0 +1,94 @@
+"use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var react_1 = __importDefault(require("react"));
+var react_native_1 = require("react-native");
+var Colors_1 = require("../Styles/Colors");
+var emptyAvatar = require('../Assets/EmptyAvatar.jpeg');
+var Font_tsx_1 = require("../Styles/Font.tsx");
+var Card = /** @class */ (function (_super) {
+    __extends(Card, _super);
+    function Card(props) {
+        var _this = _super.call(this, props) || this;
+        _this.state = {
+            avatar: emptyAvatar
+        };
+        return _this;
+    }
+    Card.prototype.render = function () {
+        var _this = this;
+        return (react_1.default.createElement(react_native_1.View, { style: styles.CardContainer },
+            react_1.default.createElement(react_native_1.TouchableOpacity, { onPress: (function () { return _this.props.onClick; }) },
+                react_1.default.createElement(react_native_1.View, { style: styles.RowStatistics },
+                    react_1.default.createElement(react_native_1.View, { style: styles.leftSizeView },
+                        react_1.default.createElement(react_native_1.Image, { source: { uri: this.props.user.avatar_url }, style: styles.ImgStyle }),
+                        react_1.default.createElement(react_native_1.Text, { style: styles.textTitleDescription }),
+                        react_1.default.createElement(react_native_1.Text, { style: styles.textTitleDescription }, this.props.user.login))))));
+    };
+    return Card;
+}(react_1.default.Component));
+exports.Card = Card;
+var styles = react_native_1.StyleSheet.create({
+    CardContainer: {
+        margin: 5,
+        flex: 1,
+        height: '15%',
+        backgroundColor: Colors_1.COLOR_HIGHLIGHT,
+        flexDirection: 'column',
+        borderRadius: 10,
+    },
+    CardContainerSelcted: {
+        margin: 5,
+        flex: 1,
+        height: '15%',
+        backgroundColor: ' -webkit-linear-gradient(left, rgba(255,175,75,1) 0%, rgba(241,111,92,1) 39%, rgba(255,175,75,1) 62%, rgba(255,175,75,1) 65%, rgba(255,146,10,1) 89%, rgba(255,146,10,1) 100%',
+        flexDirection: 'column',
+        borderRadius: 10,
+    },
+    Img: {
+        width: '5%',
+        height: '10px'
+    },
+    Row: {
+        margin: 20,
+        flexDirection: 'row'
+    },
+    RowStatistics: {
+        margin: 20,
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center'
+    },
+    leftSizeView: {
+        flexDirection: 'row',
+        justifyContent: 'flex-start'
+    },
+    rightSizeView: {
+        justifyContent: 'flex-end'
+    },
+    spaceBetween: {},
+    ImgStyle: {
+        width: 40,
+        height: 40
+    },
+    textTitleDescription: {
+        fontWeight: Font_tsx_1.FONT_TITLE_WEIGHT,
+        paddingLeft: 10
+    },
+});
+exports.default = styles;

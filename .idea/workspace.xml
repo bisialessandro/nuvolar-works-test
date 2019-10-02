@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7394f5d7-b051-41ac-8cdb-75674d794857" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Assets/EmptyAvatar.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Styles/Font.tsx.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Utils/UtilsImage.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Model/UserGitHub.ts" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Model/UserGitHub.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Components/SearchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Components/SearchBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Components/SearchBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Components/SearchBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Network/GitHubServices.js" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Network/GitHubServices.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Network/GitHubServices.ts" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Network/GitHubServices.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/MainScene.js" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/MainScene.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/MainScene.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/MainScene.tsx" afterDir="false" />
     </list>
@@ -19,14 +25,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="App.tsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NuvolerWorksApp/App.tsx">
+      <file leaf-file-name="SearchBar.tsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NuvolerWorksApp/src/Components/SearchBar.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+            <state relative-caret-position="375">
+              <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#103#129#0" expanded="true" />
+                <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -41,14 +46,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchBar.tsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NuvolerWorksApp/src/Components/SearchBar.tsx">
+      <file leaf-file-name="Card.tsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NuvolerWorksApp/src/Components/Card.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+            <state relative-caret-position="272">
+              <caret line="41" column="71" lean-forward="true" selection-start-line="41" selection-start-column="71" selection-end-line="41" selection-end-column="71" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Font.tsx.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NuvolerWorksApp/src/Styles/Font.tsx.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -62,15 +76,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rn-cli.config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NuvolerWorksApp/rn-cli.config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Colors.tsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NuvolerWorksApp/src/Styles/Colors.tsx">
           <provider selected="true" editor-type-id="text-editor">
@@ -80,25 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="yarn.lock" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NuvolerWorksApp/yarn.lock">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="tsconfig.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NuvolerWorksApp/tsconfig.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MainScene.tsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/MainScene.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="57" column="60" selection-start-line="57" selection-start-column="60" selection-end-line="57" selection-end-column="60" />
+            <state relative-caret-position="251">
+              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -110,7 +101,21 @@
         <entry file="file://$PROJECT_DIR$/NuvolerWorksApp/src/Network/GitHubServices.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+              <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".buckconfig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NuvolerWorksApp/.buckconfig">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="UtilsImage.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NuvolerWorksApp/src/Utils/UtilsImage.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -131,10 +136,14 @@
       <find>Hello</find>
       <find>,</find>
       <find>.</find>
+      <find>source</find>
+      <find>props</find>
+      <find>data</find>
     </findStrings>
     <replaceStrings>
       <replace>.</replace>
       <replace>;</replace>
+      <replace>this.props</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -151,7 +160,6 @@
         <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/MainComponent.tsx" />
         <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Styles/Colors.js" />
         <option value="$PROJECT_DIR$/NuvolerWorksApp/App.tsx" />
-        <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Components/SearchBar.tsx" />
         <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Model/UserGitHubInterface.ts" />
         <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Model/UserGitHubI.ts" />
         <option value="$PROJECT_DIR$/NuvolerWorksApp/src/network/GitHubApiCall.js" />
@@ -160,8 +168,13 @@
         <option value="$PROJECT_DIR$/NuvolerWorksApp/package.json" />
         <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Network/UserGitHub.ts" />
         <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Network/UserGitHubServices.ts" />
-        <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Network/GitHubServices.ts" />
         <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Model/UserGitHub.ts" />
+        <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Components/Card.ts" />
+        <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Styles/Font.tsx.ts" />
+        <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Components/SearchBar.tsx" />
+        <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Network/GitHubServices.ts" />
+        <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Utils/UtilsImage.ts" />
+        <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Components/Card.tsx" />
         <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/MainScene.tsx" />
       </list>
     </option>
@@ -181,8 +194,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="height" value="730" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -220,13 +234,6 @@
               <item name="nuovlar-works-test" type="462c0819:PsiDirectoryNode" />
               <item name="NuvolerWorksApp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nuovlar-works-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nuovlar-works-test" type="462c0819:PsiDirectoryNode" />
-              <item name="NuvolerWorksApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Network" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -235,13 +242,6 @@
               <item name="NuvolerWorksApp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Scenes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nuovlar-works-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nuovlar-works-test" type="462c0819:PsiDirectoryNode" />
-              <item name="NuvolerWorksApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Styles" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -258,6 +258,9 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/NuvolerWorksApp/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/NuvolerWorksApp/src/assets" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/NuvolerWorksApp/src/network" />
       <recent name="$PROJECT_DIR$/NuvolerWorksApp/src/Styles" />
@@ -275,7 +278,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.android">
+  <component name="RunManager" selected="npm.ios">
     <configuration name="android" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/NuvolerWorksApp/package.json" />
       <command value="run" />
@@ -310,8 +313,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.android" />
         <item itemvalue="npm.ios" />
+        <item itemvalue="npm.android" />
         <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
@@ -327,12 +330,12 @@
       <option name="presentableId" value="Default" />
       <updated>1570013962324</updated>
       <workItem from="1570013963633" duration="11887000" />
-      <workItem from="1570035460099" duration="6991000" />
+      <workItem from="1570035460099" duration="15591000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18878000" />
+    <option name="totallyTimeSpent" value="27478000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -343,8 +346,9 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32965517" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32965517" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.42344826" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22758621" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32827586" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -355,7 +359,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,6 +368,9 @@
         <option value="$PROJECT_DIR$/NuvolerWorksApp/__tests__/App-test.js" />
         <option value="$PROJECT_DIR$/NuvolerWorksApp/App.js" />
         <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Styles/Colors.js" />
+        <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Components/Card.js" />
+        <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Utils/UtilsImage.js" />
+        <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Styles/Font.tsx.js" />
       </list>
     </option>
   </component>
@@ -489,15 +495,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NuvolerWorksApp/src/Components/SearchBar.tsx">
+    <entry file="file://$PROJECT_DIR$/NuvolerWorksApp/src/Model/UserGitHub.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="341">
+          <caret line="307" column="20" selection-start-line="307" selection-start-column="20" selection-end-line="307" selection-end-column="20" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NuvolerWorksApp/.buckconfig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NuvolerWorksApp/src/Assets/EmptyAvatar.jpeg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/NuvolerWorksApp/src/Styles/Colors.tsx">
       <provider selected="true" editor-type-id="text-editor">
@@ -506,10 +515,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NuvolerWorksApp/src/Network/GitHubServices.ts">
+    <entry file="file://$PROJECT_DIR$/NuvolerWorksApp/src/Styles/Font.tsx.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+        <state relative-caret-position="180">
+          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NuvolerWorksApp/node_modules/@types/react-native/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="3940" column="13" selection-start-line="3940" selection-start-column="13" selection-end-line="3940" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NuvolerWorksApp/src/Components/SearchBar.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NuvolerWorksApp/src/Utils/UtilsImage.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -520,17 +553,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NuvolerWorksApp/src/Model/UserGitHub.ts">
+    <entry file="file://$PROJECT_DIR$/NuvolerWorksApp/src/Network/GitHubServices.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="307" column="20" selection-start-line="307" selection-start-column="20" selection-end-line="307" selection-end-column="20" />
+        <state relative-caret-position="90">
+          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NuvolerWorksApp/src/Components/Card.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="41" column="71" lean-forward="true" selection-start-line="41" selection-start-column="71" selection-end-line="41" selection-end-column="71" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/MainScene.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="57" column="60" selection-start-line="57" selection-start-column="60" selection-end-line="57" selection-end-column="60" />
+        <state relative-caret-position="251">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

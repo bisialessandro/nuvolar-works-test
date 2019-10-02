@@ -22,16 +22,12 @@ var Colors_1 = require("../Styles/Colors");
 var SearchBar = /** @class */ (function (_super) {
     __extends(SearchBar, _super);
     function SearchBar(props) {
-        var _this = _super.call(this, props) || this;
-        _this.filterResultsCallback = function (text) {
-            _this.props.callback(text);
-        };
-        return _this;
+        return _super.call(this, props) || this;
     }
     SearchBar.prototype.render = function () {
         var _this = this;
         return (react_1.default.createElement(react_native_1.View, { style: styles.root },
-            react_1.default.createElement(react_native_1.TextInput, { style: styles.TextInput, onChangeText: function (text) { return _this.filterResultsCallback(text); } })));
+            react_1.default.createElement(react_native_1.TextInput, { style: styles.TextInput, placeholder: this.props.placeholder, onChangeText: function (text) { return _this.props.callback(text); } })));
     };
     return SearchBar;
 }(react_1.default.Component));

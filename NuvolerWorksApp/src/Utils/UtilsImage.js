@@ -36,22 +36,21 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var UserGitHub_1 = require("../Model/UserGitHub");
 var axios = require('axios');
-var GitHubServices = /** @class */ (function () {
-    function GitHubServices() {
+var UtilsImage = /** @class */ (function () {
+    function UtilsImage() {
     }
-    GitHubServices.prototype.getUsers = function (queryParam) {
+    UtilsImage.prototype.loadImageFromUrl = function (url) {
         return __awaiter(this, void 0, void 0, function () {
             var response, err_1;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
                         _a.trys.push([0, 2, , 3]);
-                        return [4 /*yield*/, axios.get("https://api.github.com/search/users?".concat(queryParam))];
+                        return [4 /*yield*/, axios.get(url)];
                     case 1:
                         response = _a.sent();
-                        return [2 /*return*/, UserGitHub_1.UserGitHub.prototype.toUser(response.data.items)];
+                        return [2 /*return*/, response.data];
                     case 2:
                         err_1 = _a.sent();
                         console.log('Error during the comunication with GitHub: ', err_1);
@@ -61,6 +60,6 @@ var GitHubServices = /** @class */ (function () {
             });
         });
     };
-    return GitHubServices;
+    return UtilsImage;
 }());
-exports.GitHubServices = GitHubServices;
+exports.UtilsImage = UtilsImage;

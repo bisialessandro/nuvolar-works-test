@@ -5,8 +5,8 @@ import {COLOR_HIGHLIGHT,COLOR_NEGATIVE} from '../Styles/Colors';
 
 export interface Props {
 
-    callback : (filteredList:string) => void ;
-
+    callback : (value:string) => void ;
+    placeholder: string;
 
 
 }
@@ -23,18 +23,12 @@ SearchBar extends React.Component<Props, State> {
 
     }
 
-
-    filterResultsCallback = (text : string) => {
-
-        this.props.callback(text);
-    }
-
-
     render() {
         return (
             <View style={styles.root}>
                  <TextInput  style={styles.TextInput}
-                             onChangeText={text => this.filterResultsCallback( text )}
+                             placeholder={this.props.placeholder}
+                             onChangeText={text => this.props.callback( text )}
                  >
 
         </TextInput>

@@ -8,10 +8,7 @@ export class GitHubServices{
 
        try {
 
-           const response = await axios.get("https://api.github.com/search/users?q=tom+repos:%3E42+followers:%3E1000");
-
-
-           //console.log("intermediateResponse",response);
+           const response = await axios.get("https://api.github.com/search/users?".concat(queryParam));
 
            return UserGitHub.prototype.toUser(response.data.items);
 

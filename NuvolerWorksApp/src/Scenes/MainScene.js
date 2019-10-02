@@ -55,30 +55,34 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var react_1 = __importDefault(require("react"));
 var SearchBar_1 = require("../Components/SearchBar");
 var GitHubServices_1 = require("../Network/GitHubServices");
+var react_native_1 = require("react-native");
+var Card_1 = require("../Components/Card");
 var axios = require('axios');
 var MainScene = /** @class */ (function (_super) {
     __extends(MainScene, _super);
     function MainScene(props) {
         var _this = _super.call(this, props) || this;
         _this.filterUser = function (value) {
+            var newArray;
+            newArray = [];
             _this.state.listUser.forEach(function (userGitHub) {
-                return userGitHub.login.indexOf(value) > 0 && userGitHub;
+                if (userGitHub.login.toUpperCase().indexOf(value.toUpperCase()) > -1)
+                    newArray.push(userGitHub);
             });
+            return newArray;
         };
         _this.onChangeText = function (value) {
-            console.log("prova", value.toString());
             if (value === "") {
                 _this.setState({ filteredList: _this.state.listUser });
             }
             else {
-                /* let resultList = this.state.list.map(function(value){
-                             //return value.parse("login");
-                 })
-         */
-                console.log("result", _this.filterUser(value));
-                _this.setState({ filteredList: _this.state.filteredList });
+                var filterUser = _this.filterUser(value);
+                _this.setState({ filteredList: filterUser ? filterUser : [] });
             }
         };
+        _this.onClick = function (value) {
+        };
+        _this.renderItem = function (item) { return react_1.default.createElement(Card_1.Card, { user: item, onClick: _this.onClick }); };
         _this.state = {
             listUser: [],
             filteredList: []
@@ -92,19 +96,28 @@ var MainScene = /** @class */ (function (_super) {
                 switch (_a.label) {
                     case 0:
                         gitHubServ = new GitHubServices_1.GitHubServices();
-                        return [4 /*yield*/, gitHubServ.getUsers("q=tom+repos:%3E42+followers:%3E1000")];
+                        return [4 /*yield*/, gitHubServ.getUsers("q=language:typeScript")];
                     case 1:
                         result = _a.sent();
                         this.setState({ filteredList: result ? result : [] });
                         this.setState({ listUser: result ? result : [] });
-                        console.log("result", result);
                         return [2 /*return*/];
                 }
             });
         });
     };
+    MainScene.prototype.requestData = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                return [2 /*return*/];
+            });
+        });
+    };
     MainScene.prototype.render = function () {
-        return (react_1.default.createElement(SearchBar_1.SearchBar, { callback: this.onChangeText }));
+        var _this = this;
+        return (react_1.default.createElement(react_native_1.View, null,
+            react_1.default.createElement(SearchBar_1.SearchBar, { placeholder: "Insert a username", callback: this.onChangeText }),
+            react_1.default.createElement(react_native_1.FlatList, { data: this.state.filteredList, renderItem: function (item) { return _this.renderItem(item.item); } })));
     };
     return MainScene;
 }(react_1.default.Component));
