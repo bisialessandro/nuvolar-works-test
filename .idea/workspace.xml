@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7394f5d7-b051-41ac-8cdb-75674d794857" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Components/ShowHiddenComponent.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Components/CardComponents/CardDetailRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Components/CardComponents/CardDetailRow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Components/CardComponents/CardDetailRow.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Components/CardComponents/CardDetailRow.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/DetailUserPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/DetailUserPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/DetailUserPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/DetailUserPage.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -120,7 +124,7 @@
       <updated>1570013962324</updated>
       <workItem from="1570013963633" duration="11887000" />
       <workItem from="1570035460099" duration="17744000" />
-      <workItem from="1570108881932" duration="17818000" />
+      <workItem from="1570108881932" duration="21450000" />
     </task>
     <servers />
   </component>
@@ -141,6 +145,7 @@
         <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Components/HidebaleComponent.js" />
         <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Components/CardRepository.js" />
         <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Styles/Font.js" />
+        <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Components/ShowHiddenComponent.js" />
       </list>
     </option>
   </component>

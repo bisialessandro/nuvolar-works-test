@@ -52,12 +52,14 @@ const styles = StyleSheet.create({
     },
     textTitle:{
         fontWeight:FONT_TITLE_WEIGHT,
-        paddingLeft:10
+        paddingLeft:10,
+
 
     },
     textDescription:{
         fontWeight:FONT_TITLE_WEIGHT,
-        paddingLeft:10
+        paddingLeft:10,
+        flex:1
 
     },
 

@@ -2,25 +2,22 @@ import React from 'react';
 import {UserGitHub} from "../Model/UserGitHub";
 import {GitHubServices} from "../Network/GitHubServices";
 import {
-    Animated,
     FlatList,
     Image,
     ImageBackground,
     SafeAreaView,
     ScrollView,
     StyleSheet,
-    Text, TouchableOpacity,
     View
 } from "react-native";
 import {CardDetailRow} from '../Components/CardComponents/CardDetailRow';
 import { NavigationStackProp } from 'react-navigation-stack';
-import {COLOR_HIGHLIGHT, COLOR_NEGATIVE, COLOR_TEXT} from "../Styles/Colors";
 import {Repository} from "../Model/Repository";
 import {CardUser} from "../Components/CardComponents/CardUser";
 import {CardRepository} from "../Components/CardComponents/CardRepository";
+import {ShowHiddenComponent} from "../Components/ShowHiddenComponent";
 const BackgroundApp = require( '../Assets/images/BackgroundApp.png');
-const ArrowUp = require( '../Assets/images/ArrowUp.png');
-const ArrowDown = require( '../Assets/images/ArrowDown.png');
+
 
 interface Props {
     navigation: NavigationStackProp<{user:UserGitHub}>;
@@ -32,8 +29,6 @@ interface State {
     followers: Array<UserGitHub>;
     repositories:Array<Repository>;
     userGithub:UserGitHub;
-    isShowingFollowers:boolean;
-    isShowingRepositories:boolean;
 
 }
 
@@ -52,8 +47,7 @@ export class DetailUserPage extends React.Component<Props, State> {
             followers:[],
             repositories:[],
             userGithub:userDetails,
-            isShowingFollowers:false,
-            isShowingRepositories:false
+
         })
 
     }
@@ -85,27 +79,27 @@ export class DetailUserPage extends React.Component<Props, State> {
 
     }
 
-  onPressShowFollowers = () => {
-        this.setState({
-             isShowingFollowers:!this.state.isShowingFollowers
-        });
-  }
-    onPressShowRepositories = () => {
-        this.setState({
-            isShowingRepositories:!this.state.isShowingRepositories
-        });
-    }
 
-    renderItem = (item:UserGitHub) => <CardUser
+    renderItemUser = (item:UserGitHub) => <CardUser
         user={item}
         onClick={this.onClick}
         showArrow={false}
     />
 
-    renderItemRepository = (item:Repository) => <CardRepository
-        repository={item}   />
+    renderItemUserFlat = () => <FlatList<UserGitHub>
+        data={this.state.followers}
+        renderItem={item => this.renderItemUser(item.item)} />
 
-    render() {
+    renderItemRepository = (item:Repository) =><CardRepository repository={item} />
+
+    renderItemRepositoryFlat = () =><FlatList<Repository>
+            data={this.state.repositories}
+            renderItem={item => this.renderItemRepository(item.item)}
+        />
+
+
+
+            render() {
         return (
             <SafeAreaView >
                 <ImageBackground source={BackgroundApp} style={styles.ImageBackground} >
@@ -119,29 +113,10 @@ export class DetailUserPage extends React.Component<Props, State> {
                             <CardDetailRow title={"Username: "}  value={this.state.userGithub.login} />
                             <CardDetailRow title={"GitUrl:   "}  value={this.state.userGithub.gists_url} />
                             <CardDetailRow title={"HtmlUrl:   "}  value={this.state.userGithub.html_url} />
-                            <TouchableOpacity style={styles.RowTitleFlat} onPress={this.onPressShowFollowers}>
-                                <Text style={styles.TextTitleFlat}>{"Followers:"}</Text>
-                                <View style={styles.ViewAlignRight}>
-                                     <Image source={this.state.isShowingFollowers?ArrowDown:ArrowUp} style={styles.HideableImage}/>
-                                </View>
 
-                            </TouchableOpacity>
-                            {this.state.isShowingFollowers&&<FlatList<UserGitHub>
-                            data={this.state.followers}
-                            renderItem={item => this.renderItem(item.item)}
-                        />}
+                            <ShowHiddenComponent renderItem={this.renderItemUserFlat} title={"Followers:"}/>
 
-                            <TouchableOpacity style={styles.RowTitleFlat} onPress={this.onPressShowRepositories}>
-                                <Text style={styles.TextTitleFlat}>{"Repositories:"}</Text>
-                                <View style={styles.ViewAlignRight}>
-                                    <Image source={this.state.isShowingRepositories?ArrowDown:ArrowUp} style={styles.HideableImage}/>
-                                </View>
-
-                            </TouchableOpacity>
-                            {this.state.isShowingRepositories&&<FlatList<Repository>
-                                data={this.state.repositories}
-                                renderItem={item => this.renderItemRepository(item.item)}
-                            />}
+                           <ShowHiddenComponent renderItem={this.renderItemRepositoryFlat}  title={"Repositories:"} />
 
                         </View>
 
@@ -185,28 +160,8 @@ const styles = StyleSheet.create({
         width:'15%',
         height:'40px'
     },
-    RowTitleFlat:{
-        flexDirection: 'row',
-        marginTop:30,
-        padding:20,
-        flex:1,
-        borderRadius: 10,
-        backgroundColor:COLOR_NEGATIVE,
-    },
-    TextTitleFlat:{
-        fontSize:19,
-        color:COLOR_TEXT,
 
-    },
-    HideableImage:{
-        alignContent: 'center',
-    },
-    ViewAlignRight:{
-        alignContent: 'center',
-        flex:1,
-        flexDirection:'column',
 
-    }
 });
 
 export default styles;

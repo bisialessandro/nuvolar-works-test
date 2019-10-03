@@ -55,12 +55,10 @@ var react_1 = __importDefault(require("react"));
 var GitHubServices_1 = require("../Network/GitHubServices");
 var react_native_1 = require("react-native");
 var CardDetailRow_1 = require("../Components/CardComponents/CardDetailRow");
-var Colors_1 = require("../Styles/Colors");
 var CardUser_1 = require("../Components/CardComponents/CardUser");
 var CardRepository_1 = require("../Components/CardComponents/CardRepository");
+var ShowHiddenComponent_1 = require("../Components/ShowHiddenComponent");
 var BackgroundApp = require('../Assets/images/BackgroundApp.png');
-var ArrowUp = require('../Assets/images/ArrowUp.png');
-var ArrowDown = require('../Assets/images/ArrowDown.png');
 ;
 var DetailUserPage = /** @class */ (function (_super) {
     __extends(DetailUserPage, _super);
@@ -68,18 +66,10 @@ var DetailUserPage = /** @class */ (function (_super) {
         var _this = _super.call(this, props) || this;
         _this.onClick = function (value) {
         };
-        _this.onPressShowFollowers = function () {
-            _this.setState({
-                isShowingFollowers: !_this.state.isShowingFollowers
-            });
-        };
-        _this.onPressShowRepositories = function () {
-            _this.setState({
-                isShowingRepositories: !_this.state.isShowingRepositories
-            });
-        };
-        _this.renderItem = function (item) { return react_1.default.createElement(CardUser_1.CardUser, { user: item, onClick: _this.onClick, showArrow: false }); };
+        _this.renderItemUser = function (item) { return react_1.default.createElement(CardUser_1.CardUser, { user: item, onClick: _this.onClick, showArrow: false }); };
+        _this.renderItemUserFlat = function () { return react_1.default.createElement(react_native_1.FlatList, { data: _this.state.followers, renderItem: function (item) { return _this.renderItemUser(item.item); } }); };
         _this.renderItemRepository = function (item) { return react_1.default.createElement(CardRepository_1.CardRepository, { repository: item }); };
+        _this.renderItemRepositoryFlat = function () { return react_1.default.createElement(react_native_1.FlatList, { data: _this.state.repositories, renderItem: function (item) { return _this.renderItemRepository(item.item); } }); };
         var userDetails = _this.props.navigation.getParam('user', null);
         if (userDetails == null) {
             console.log("Error", userDetails);
@@ -88,8 +78,6 @@ var DetailUserPage = /** @class */ (function (_super) {
             followers: [],
             repositories: [],
             userGithub: userDetails,
-            isShowingFollowers: false,
-            isShowingRepositories: false
         });
         return _this;
     }
@@ -121,7 +109,6 @@ var DetailUserPage = /** @class */ (function (_super) {
         });
     };
     DetailUserPage.prototype.render = function () {
-        var _this = this;
         return (react_1.default.createElement(react_native_1.SafeAreaView, null,
             react_1.default.createElement(react_native_1.ImageBackground, { source: BackgroundApp, style: styles.ImageBackground },
                 react_1.default.createElement(react_native_1.ScrollView, null,
@@ -131,16 +118,8 @@ var DetailUserPage = /** @class */ (function (_super) {
                         react_1.default.createElement(CardDetailRow_1.CardDetailRow, { title: "Username: ", value: this.state.userGithub.login }),
                         react_1.default.createElement(CardDetailRow_1.CardDetailRow, { title: "GitUrl:   ", value: this.state.userGithub.gists_url }),
                         react_1.default.createElement(CardDetailRow_1.CardDetailRow, { title: "HtmlUrl:   ", value: this.state.userGithub.html_url }),
-                        react_1.default.createElement(react_native_1.TouchableOpacity, { style: styles.RowTitleFlat, onPress: this.onPressShowFollowers },
-                            react_1.default.createElement(react_native_1.Text, { style: styles.TextTitleFlat }, "Followers:"),
-                            react_1.default.createElement(react_native_1.View, { style: styles.ViewAlignRight },
-                                react_1.default.createElement(react_native_1.Image, { source: this.state.isShowingFollowers ? ArrowDown : ArrowUp, style: styles.HideableImage }))),
-                        this.state.isShowingFollowers && react_1.default.createElement(react_native_1.FlatList, { data: this.state.followers, renderItem: function (item) { return _this.renderItem(item.item); } }),
-                        react_1.default.createElement(react_native_1.TouchableOpacity, { style: styles.RowTitleFlat, onPress: this.onPressShowRepositories },
-                            react_1.default.createElement(react_native_1.Text, { style: styles.TextTitleFlat }, "Repositories:"),
-                            react_1.default.createElement(react_native_1.View, { style: styles.ViewAlignRight },
-                                react_1.default.createElement(react_native_1.Image, { source: this.state.isShowingRepositories ? ArrowDown : ArrowUp, style: styles.HideableImage }))),
-                        this.state.isShowingRepositories && react_1.default.createElement(react_native_1.FlatList, { data: this.state.repositories, renderItem: function (item) { return _this.renderItemRepository(item.item); } }))))));
+                        react_1.default.createElement(ShowHiddenComponent_1.ShowHiddenComponent, { renderItem: this.renderItemUserFlat, title: "Followers:" }),
+                        react_1.default.createElement(ShowHiddenComponent_1.ShowHiddenComponent, { renderItem: this.renderItemRepositoryFlat, title: "Repositories:" }))))));
     };
     return DetailUserPage;
 }(react_1.default.Component));
@@ -172,25 +151,5 @@ var styles = react_native_1.StyleSheet.create({
         width: '15%',
         height: '40px'
     },
-    RowTitleFlat: {
-        flexDirection: 'row',
-        marginTop: 30,
-        padding: 20,
-        flex: 1,
-        borderRadius: 10,
-        backgroundColor: Colors_1.COLOR_NEGATIVE,
-    },
-    TextTitleFlat: {
-        fontSize: 19,
-        color: Colors_1.COLOR_TEXT,
-    },
-    HideableImage: {
-        alignContent: 'center',
-    },
-    ViewAlignRight: {
-        alignContent: 'center',
-        flex: 1,
-        flexDirection: 'column',
-    }
 });
 exports.default = styles;

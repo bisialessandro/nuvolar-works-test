@@ -50,11 +50,12 @@ var styles = react_native_1.StyleSheet.create({
     },
     textTitle: {
         fontWeight: Font_1.FONT_TITLE_WEIGHT,
-        paddingLeft: 10
+        paddingLeft: 10,
     },
     textDescription: {
         fontWeight: Font_1.FONT_TITLE_WEIGHT,
-        paddingLeft: 10
+        paddingLeft: 10,
+        flex: 1
     },
 });
 exports.default = styles;
