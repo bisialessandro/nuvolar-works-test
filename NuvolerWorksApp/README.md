@@ -15,37 +15,33 @@
   </a>
 </p>
 
-> Clean and minimalist React Native template for a quick start with TypeScript.
+## Getting Started
+Mobile application that shows a list of gitlab users and the details of them account on the click.
+### Prerequisites
 
-## :star: Features
+Install on your machine:
+- `node`
+- `npm or yarn`
+- `react-native-cli`
+- `XCode for iOS`
+- `OpenJDK for Android`
+- `brew install watchman`
+-  `AdoptOpenJDK/openjdk`
+- ` adoptopenjdk8`
+### Before Run General
+Go inside the NuvolarWorksApp folder and launch the from the terminal the command:
+-yarn install
 
-- Elegant usage directly within the [React Native CLI](https://github.com/react-native-community/cli)
-- Consistent with the default React Native template
-- Minimal additional dependencies
+### Before Run Android
+Open the Android folder with Android Studio and build it.
+If not already installed necessary download SDK Build tools >28.
 
-## :arrow_forward: Usage
+### Before Run iOS
+Enter inside the iOS folder and run the command:
+- `pod install  `
+- Open the ios project with Xcode and build it.
 
-> `react-native@0.61.0` or higher
+### Running on emulators or connected devices 
 
-```sh
-npx react-native init MyApp --template react-native-template-typescript
-```
-
-> `react-native@0.60.x`
-
-```sh
-npx react-native init MyApp --template react-native-template-typescript@6.2.0
-```
-
-### Note on the legacy CLI
-There seems to be quite some confusion about the legacy CLI. This template only works with the new CLI. Make sure you have uninstalled the legacy `react-native-cli` first (`npm uninstall -g react-native-cli`), for the above command to work. If you wish to not use `npx`, you can also install the new CLI globally (`npm i -g @react-native-community/cli` or `yarn global add @react-native-community/cli`).
-
-Further information can be found here: https://github.com/react-native-community/cli#about
-
-## :computer: Contributing
-
-Contributions are very welcome. Please check out the [contributing document](CONTRIBUTING.md).
-
-## :bookmark: License
-
-This project is [MIT](LICENSE) licensed.
+- `react-native run-android`
+- `react-native run-ios`

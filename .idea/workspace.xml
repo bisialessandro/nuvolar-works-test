@@ -2,27 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7394f5d7-b051-41ac-8cdb-75674d794857" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Assets/images/ArrowDown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Assets/images/ArrowUp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Components/CardComponents/CardDetailRow.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Components/CardComponents/CardRepository.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Model/Repository.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/DetailUserPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Components/Card.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Components/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Components/CardComponents/CardUser.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Components/SearchBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Components/SearchBar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Network/GitHubServices.js" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Network/GitHubServices.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Network/GitHubServices.ts" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Network/GitHubServices.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Router/MainStackNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Router/MainStackNavigator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Router/MainStackNavigator.ts" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Router/MainStackNavigator.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/MainScene.js" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/MainScene.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/MainScene.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/MainScene.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Styles/Colors.js" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Styles/Colors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Styles/Colors.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Styles/Colors.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Styles/Font.tsx.ts" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Styles/Font.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -139,7 +120,7 @@
       <updated>1570013962324</updated>
       <workItem from="1570013963633" duration="11887000" />
       <workItem from="1570035460099" duration="17744000" />
-      <workItem from="1570108881932" duration="16782000" />
+      <workItem from="1570108881932" duration="17818000" />
     </task>
     <servers />
   </component>
