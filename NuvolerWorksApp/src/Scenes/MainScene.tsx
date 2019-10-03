@@ -3,7 +3,7 @@ import {SearchBar} from '../Components/SearchBar';
 import {UserGitHub} from "../Model/UserGitHub";
 import {GitHubServices} from "../Network/GitHubServices";
 import {Animated, FlatList, ImageBackground, SafeAreaView, StyleSheet} from "react-native";
-import {Card} from '../Components/Card';
+import {CardUser} from '../Components/CardComponents/CardUser';
 import { NavigationStackProp } from 'react-navigation-stack';
 import {COLOR_HIGHLIGHT} from "../Styles/Colors";
 const BackgroundApp = require( '../Assets/images/BackgroundApp.png');
@@ -92,12 +92,16 @@ export class MainScene extends React.Component<Props, State> {
     onClick = (value:UserGitHub) => {
 
 
+        this.props.navigation.navigate("DetailUser",{'user':value});
+
     }
 
 
-    renderItem = (item:UserGitHub) => <Card
+    renderItem = (item:UserGitHub) => <CardUser
         user={item}
         onClick={this.onClick}
+        key={item.id}
+        showArrow={true}
     />
 
     render() {

@@ -3,7 +3,7 @@ import { StyleSheet, Text, View,TextInput} from 'react-native';
 import {COLOR_HIGHLIGHT,COLOR_NEGATIVE} from '../Styles/Colors';
 
 
-export interface Props {
+interface Props {
 
     callback : (value:string) => void ;
     placeholder: string;
@@ -16,8 +16,7 @@ interface State {
 
 }
 
-export class
-SearchBar extends React.Component<Props, State> {
+export class SearchBar extends React.Component<Props, State> {
     constructor(props: Props) {
         super(props);
 

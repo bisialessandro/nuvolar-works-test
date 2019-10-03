@@ -18,34 +18,34 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var react_1 = __importDefault(require("react"));
 var react_native_1 = require("react-native");
-var Colors_1 = require("../Styles/Colors");
-var emptyAvatar = require('../Assets/images/EmptyAvatar.jpeg');
-var RightArrow = require('../Assets/images/RightArrow.png');
-var Font_tsx_1 = require("../Styles/Font.tsx");
-var Card = /** @class */ (function (_super) {
-    __extends(Card, _super);
-    function Card(props) {
+var Colors_1 = require("../../Styles/Colors");
+var emptyAvatar = require('../../Assets/images/EmptyAvatar.jpeg');
+var RightArrow = require('../../Assets/images/RightArrow.png');
+var Font_js_1 = require("../../Styles/Font.js");
+var CardUser = /** @class */ (function (_super) {
+    __extends(CardUser, _super);
+    function CardUser(props) {
         var _this = _super.call(this, props) || this;
         _this.state = {
-            avatar: emptyAvatar
+            avatar: emptyAvatar,
         };
         return _this;
     }
-    Card.prototype.render = function () {
+    CardUser.prototype.render = function () {
         var _this = this;
         return (react_1.default.createElement(react_native_1.View, { style: styles.CardContainer },
-            react_1.default.createElement(react_native_1.TouchableOpacity, { onPress: (function () { return _this.props.onClick; }) },
+            react_1.default.createElement(react_native_1.TouchableOpacity, { onPress: (function () { return _this.props.onClick(_this.props.user); }) },
                 react_1.default.createElement(react_native_1.View, { style: styles.MainRow },
                     react_1.default.createElement(react_native_1.View, { style: styles.leftSizeView },
                         react_1.default.createElement(react_native_1.Image, { source: { uri: this.props.user.avatar_url }, style: styles.ImgStyle }),
                         react_1.default.createElement(react_native_1.View, { style: styles.leftSizeView },
                             react_1.default.createElement(react_native_1.Text, { style: styles.textTitleDescription }, "Username: "),
                             react_1.default.createElement(react_native_1.Text, { style: styles.textTitleDescription }, this.props.user.login))),
-                    react_1.default.createElement(react_native_1.Image, { source: RightArrow, style: styles.ImgStyle })))));
+                    this.props.showArrow && react_1.default.createElement(react_native_1.Image, { source: RightArrow, style: styles.ImgStyle })))));
     };
-    return Card;
+    return CardUser;
 }(react_1.default.Component));
-exports.Card = Card;
+exports.CardUser = CardUser;
 var styles = react_native_1.StyleSheet.create({
     CardContainer: {
         margin: 5,
@@ -92,7 +92,7 @@ var styles = react_native_1.StyleSheet.create({
         width: 40,
     },
     textTitleDescription: {
-        fontWeight: Font_tsx_1.FONT_TITLE_WEIGHT,
+        fontWeight: Font_js_1.FONT_TITLE_WEIGHT,
         paddingLeft: 10
     },
 });

@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.FONT_BOLD_FAMILY = 'Roboto-Bold';
+exports.FONT_BASE_SIZE = 16;
+exports.FONT_BASE_WEIGHT = 'normal';
+exports.FONT_SMALL_SIZE = 14;
+exports.FONT_TITLE_SIZE = 22;
+exports.FONT_CURRENCY = 35;
+exports.FONT_TITLE_WEIGHT = 'bold';
+exports.FONT_BIG_TITLE_SIZE = 88;
+exports.FONT_BIG_TITLE_WEIGHT = 'normal';
+exports.FONT_CARD_TITLE_SIZE = 18;

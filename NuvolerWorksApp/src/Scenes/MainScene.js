@@ -55,7 +55,7 @@ var react_1 = __importDefault(require("react"));
 var SearchBar_1 = require("../Components/SearchBar");
 var GitHubServices_1 = require("../Network/GitHubServices");
 var react_native_1 = require("react-native");
-var Card_1 = require("../Components/Card");
+var CardUser_1 = require("../Components/CardComponents/CardUser");
 var BackgroundApp = require('../Assets/images/BackgroundApp.png');
 ;
 var MainScene = /** @class */ (function (_super) {
@@ -95,8 +95,9 @@ var MainScene = /** @class */ (function (_super) {
             }
         };
         _this.onClick = function (value) {
+            _this.props.navigation.navigate("DetailUser", { 'user': value });
         };
-        _this.renderItem = function (item) { return react_1.default.createElement(Card_1.Card, { user: item, onClick: _this.onClick }); };
+        _this.renderItem = function (item) { return react_1.default.createElement(CardUser_1.CardUser, { user: item, onClick: _this.onClick, key: item.id, showArrow: true }); };
         _this.state = {
             listUser: [],
             filteredList: []

@@ -36,6 +36,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var UserGitHub_1 = require("../Model/UserGitHub");
+var Repository_1 = require("../Model/Repository");
 var axios = require('axios');
 var GitHubServices = /** @class */ (function () {
     function GitHubServices() {
@@ -54,6 +55,48 @@ var GitHubServices = /** @class */ (function () {
                     case 2:
                         err_1 = _a.sent();
                         console.log('Error during the comunication with GitHub: ', err_1);
+                        return [2 /*return*/, null];
+                    case 3: return [2 /*return*/];
+                }
+            });
+        });
+    };
+    GitHubServices.prototype.getFollowers = function (queryParam, user) {
+        return __awaiter(this, void 0, void 0, function () {
+            var response, err_2;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 2, , 3]);
+                        return [4 /*yield*/, axios.get("https://api.github.com/users/".concat(user) + "/followers"
+                                .concat(queryParam))];
+                    case 1:
+                        response = _a.sent();
+                        return [2 /*return*/, UserGitHub_1.UserGitHub.prototype.toUser(response.data)];
+                    case 2:
+                        err_2 = _a.sent();
+                        console.log('Error during the comunication with GitHub: ', err_2);
+                        return [2 /*return*/, null];
+                    case 3: return [2 /*return*/];
+                }
+            });
+        });
+    };
+    GitHubServices.prototype.getRepositories = function (queryParam, user) {
+        return __awaiter(this, void 0, void 0, function () {
+            var response, err_3;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        _a.trys.push([0, 2, , 3]);
+                        return [4 /*yield*/, axios.get("https://api.github.com/users/".concat(user) + "/repos"
+                                .concat(queryParam))];
+                    case 1:
+                        response = _a.sent();
+                        return [2 /*return*/, Repository_1.Repository.prototype.toRepository(response.data)];
+                    case 2:
+                        err_3 = _a.sent();
+                        console.log('Error during the comunication with GitHub: ', err_3);
                         return [2 /*return*/, null];
                     case 3: return [2 /*return*/];
                 }

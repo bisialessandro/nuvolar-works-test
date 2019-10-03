@@ -1,16 +1,17 @@
 import React from 'react';
 import {StyleSheet, Text, View, TouchableOpacity, Image, ImageURISource} from 'react-native';
-import {COLOR_HIGHLIGHT,COLOR_NEGATIVE} from '../Styles/Colors';
-import {UserGitHub} from "../Model/UserGitHub";
-import {UtilsImage} from "../Utils/UtilsImage";
-const emptyAvatar = require('../Assets/images/EmptyAvatar.jpeg');
-const RightArrow = require('../Assets/images/RightArrow.png');
-import {FONT_TITLE_WEIGHT} from '../Styles/Font.tsx';
+import {COLOR_HIGHLIGHT,COLOR_NEGATIVE} from '../../Styles/Colors';
+import {UserGitHub} from "../../Model/UserGitHub";
+import {UtilsImage} from "../../Utils/UtilsImage";
+const emptyAvatar = require('../../Assets/images/EmptyAvatar.jpeg');
+const RightArrow = require('../../Assets/images/RightArrow.png');
+import {FONT_TITLE_WEIGHT} from '../../Styles/Font.js';
 
-export interface Props {
+interface Props {
 
     onClick : (clickedReference:UserGitHub) => void ;
     user:UserGitHub;
+    showArrow:boolean;
 
 
 }
@@ -18,15 +19,17 @@ export interface Props {
 interface State {
 
 
+
 }
 
-export class Card extends React.Component<Props, State> {
+export class CardUser extends React.Component<Props, State> {
     constructor(props: Props) {
         super(props);
 
 
         this.state = {
-            avatar:emptyAvatar
+            avatar:emptyAvatar,
+
         }
 
     }
@@ -36,7 +39,7 @@ export class Card extends React.Component<Props, State> {
     render() {
         return (
             <View style={styles.CardContainer} >
-                <TouchableOpacity onPress={( () =>this.props.onClick)} >
+                <TouchableOpacity onPress={( () =>this.props.onClick(this.props.user))} >
                     <View style={styles.MainRow} >
                         <View style={styles.leftSizeView}>
                             <Image source={{uri:this.props.user.avatar_url}} style={styles.ImgStyle}/>
@@ -49,7 +52,7 @@ export class Card extends React.Component<Props, State> {
 
                             </View>
 
-                        <Image source={RightArrow} style={styles.ImgStyle}/>
+                        {this.props.showArrow&&<Image source={RightArrow} style={styles.ImgStyle}/>}
 
 
                     </View>
