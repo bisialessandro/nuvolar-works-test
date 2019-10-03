@@ -44,6 +44,7 @@ const styles = StyleSheet.create({
         width:'80%',
         alignItems: 'center',
         alignSelf: 'center',
+        margin:10
     },
     buttons: {
         flexDirection: 'row',

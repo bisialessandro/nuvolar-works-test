@@ -13,11 +13,10 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
         function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
         function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
@@ -57,11 +56,26 @@ var SearchBar_1 = require("../Components/SearchBar");
 var GitHubServices_1 = require("../Network/GitHubServices");
 var react_native_1 = require("react-native");
 var Card_1 = require("../Components/Card");
-var axios = require('axios');
+var BackgroundApp = require('../Assets/images/BackgroundApp.png');
+;
 var MainScene = /** @class */ (function (_super) {
     __extends(MainScene, _super);
     function MainScene(props) {
         var _this = _super.call(this, props) || this;
+        /*async requestData(){
+    
+    
+            let gitHubServ = new GitHubServices();
+    
+            //let result = await gitHubServ.getUsers("q=tom+repos:%3E42+followers:%3E1000");
+            let result = await gitHubServ.getUsers("q=language:typeScript");
+    
+    
+            this.setState({filteredList:result?result:[]});
+            this.setState({listUser:result?result:[]});
+    
+        }
+    */
         _this.filterUser = function (value) {
             var newArray;
             newArray = [];
@@ -91,18 +105,6 @@ var MainScene = /** @class */ (function (_super) {
     }
     MainScene.prototype.componentDidMount = function () {
         return __awaiter(this, void 0, void 0, function () {
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0: return [4 /*yield*/, this.requestData()];
-                    case 1:
-                        _a.sent();
-                        return [2 /*return*/];
-                }
-            });
-        });
-    };
-    MainScene.prototype.requestData = function () {
-        return __awaiter(this, void 0, void 0, function () {
             var gitHubServ, result;
             return __generator(this, function (_a) {
                 switch (_a.label) {
@@ -120,10 +122,21 @@ var MainScene = /** @class */ (function (_super) {
     };
     MainScene.prototype.render = function () {
         var _this = this;
-        return (react_1.default.createElement(react_native_1.View, null,
-            react_1.default.createElement(SearchBar_1.SearchBar, { placeholder: "Insert a username", callback: this.onChangeText }),
-            react_1.default.createElement(react_native_1.FlatList, { data: this.state.filteredList, renderItem: function (item) { return _this.renderItem(item.item); } })));
+        return (react_1.default.createElement(react_native_1.SafeAreaView, null,
+            react_1.default.createElement(react_native_1.ImageBackground, { source: BackgroundApp, style: styles.ImageBackground },
+                react_1.default.createElement(SearchBar_1.SearchBar, { placeholder: "Insert a username", callback: this.onChangeText }),
+                react_1.default.createElement(react_native_1.FlatList, { data: this.state.filteredList, renderItem: function (item) { return _this.renderItem(item.item); } }))));
     };
     return MainScene;
 }(react_1.default.Component));
 exports.MainScene = MainScene;
+var styles = react_native_1.StyleSheet.create({
+    ImageBackground: {
+        width: '100%',
+        height: '100%'
+    },
+    SearchBar: {
+        margin: '10px'
+    }
+});
+exports.default = styles;

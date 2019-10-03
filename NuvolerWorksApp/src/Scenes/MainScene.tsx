@@ -2,15 +2,15 @@ import React from 'react';
 import {SearchBar} from '../Components/SearchBar';
 import {UserGitHub} from "../Model/UserGitHub";
 import {GitHubServices} from "../Network/GitHubServices";
-import {Animated,FlatList,View} from "react-native";
+import {Animated, FlatList, ImageBackground, SafeAreaView, StyleSheet} from "react-native";
 import {Card} from '../Components/Card';
-const axios = require('axios');
+import { NavigationStackProp } from 'react-navigation-stack';
+import {COLOR_HIGHLIGHT} from "../Styles/Colors";
+const BackgroundApp = require( '../Assets/images/BackgroundApp.png');
 
-export interface Props {
-
-
-}
-
+interface Props {
+    navigation: NavigationStackProp;
+};
 interface State {
 
     listUser: Array<UserGitHub>;
@@ -18,11 +18,11 @@ interface State {
 }
 
 export class MainScene extends React.Component<Props, State> {
-     constructor(props: Props) {
+    constructor(props: Props) {
         super(props);
 
 
-       this.state = {
+        this.state = {
             listUser:[],
             filteredList:[]
         };
@@ -31,37 +31,44 @@ export class MainScene extends React.Component<Props, State> {
 
     async componentDidMount(){
 
-                await this.requestData();
+        let gitHubServ = new GitHubServices();
 
-     }
-
-     async requestData(){
-
-         let gitHubServ = new GitHubServices();
-
-         //let result = await gitHubServ.getUsers("q=tom+repos:%3E42+followers:%3E1000");
-         let result = await gitHubServ.getUsers("q=language:typeScript");
+        //let result = await gitHubServ.getUsers("q=tom+repos:%3E42+followers:%3E1000");
+        let result = await gitHubServ.getUsers("q=language:typeScript");
 
 
-         this.setState({filteredList:result?result:[]});
-         this.setState({listUser:result?result:[]});
-
+        this.setState({filteredList:result?result:[]});
+        this.setState({listUser:result?result:[]});
 
     }
 
+    /*async requestData(){
+
+
+        let gitHubServ = new GitHubServices();
+
+        //let result = await gitHubServ.getUsers("q=tom+repos:%3E42+followers:%3E1000");
+        let result = await gitHubServ.getUsers("q=language:typeScript");
+
+
+        this.setState({filteredList:result?result:[]});
+        this.setState({listUser:result?result:[]});
+
+    }
+*/
     filterUser = (value:string) => {
 
-          let newArray : Array<UserGitHub> ;
+        let newArray : Array<UserGitHub> ;
 
-          newArray = [];
+        newArray = [];
 
-           this.state.listUser.forEach(userGitHub => {
+        this.state.listUser.forEach(userGitHub => {
 
-              if(userGitHub.login.toUpperCase().indexOf(value.toUpperCase())>-1)
-                  newArray.push(userGitHub);
-         });
+            if(userGitHub.login.toUpperCase().indexOf(value.toUpperCase())>-1)
+                newArray.push(userGitHub);
+        });
 
-           return newArray;
+        return newArray;
 
     }
 
@@ -85,23 +92,38 @@ export class MainScene extends React.Component<Props, State> {
     onClick = (value:UserGitHub) => {
 
 
-     }
+    }
 
 
-     renderItem = (item:UserGitHub) => <Card
+    renderItem = (item:UserGitHub) => <Card
         user={item}
         onClick={this.onClick}
     />
 
     render() {
         return (
-            <View>
-            <SearchBar placeholder={"Insert a username"} callback={this.onChangeText} />
-                <FlatList<UserGitHub>
-                    data={this.state.filteredList}
-                    renderItem={item => this.renderItem(item.item)}
+            <SafeAreaView >
+                <ImageBackground source={BackgroundApp} style={styles.ImageBackground} >
+                    <SearchBar placeholder={"Insert a username"} callback={this.onChangeText}  />
+                    <FlatList<UserGitHub>
+                        data={this.state.filteredList}
+                        renderItem={item => this.renderItem(item.item)}
                     />
-            </View>
+                </ImageBackground>
+            </SafeAreaView>
         );
     }
 }
+
+const styles = StyleSheet.create({
+    ImageBackground: {
+
+        width:'100%',
+        height:'100%'
+    },
+    SearchBar:{
+        margin:'10px'
+    }
+});
+
+export default styles;
