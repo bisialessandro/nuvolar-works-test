@@ -1,6 +1,5 @@
 import React from 'react';
 import {UserGitHub} from "../Model/UserGitHub";
-import {GitHubServices} from "../Network/GitHubServices";
 import {
     FlatList,
     Image,
@@ -16,63 +15,43 @@ import {Repository} from "../Model/Repository";
 import {CardUser} from "../Components/CardComponents/CardUser";
 import {CardRepository} from "../Components/CardComponents/CardRepository";
 import {ShowHiddenComponent} from "../Components/ShowHiddenComponent";
+import {AppState} from "../store";
+import {connect} from "react-redux";
+import {thunkFetchFollowers, thunkFetchRepositories} from "../store/thunk";
+import {GitHubState} from "../store/github/types";
 const BackgroundApp = require( '../Assets/images/BackgroundApp.png');
 
 
 interface Props {
-    navigation: NavigationStackProp<{user:UserGitHub}>;
+    navigation: NavigationStackProp;
 
 
 };
+
+interface AppProps{
+    gitHub: GitHubState;
+    thunkFetchRepositories : any;
+    thunkFetchFollowers: any;
+
+}
 interface State {
 
-    followers: Array<UserGitHub>;
-    repositories:Array<Repository>;
-    userGithub:UserGitHub;
+
 
 }
 
-export class DetailUserPage extends React.Component<Props, State> {
+class DetailUserPage extends React.Component<Props, State,AppProps> {
     constructor(props: Props) {
         super(props);
-        let userDetails = this.props.navigation.getParam('user', null);
-
-        if(userDetails==null){
-            console.log("Error",userDetails);
-        }
-
-
-
-      this.state = ({
-            followers:[],
-            repositories:[],
-            userGithub:userDetails,
-
-        })
-
     }
 
     async componentDidMount(){
 
+      await this.props.thunkFetchRepositories(this.props.gitHub.userDetails.login);
 
-      let result = await GitHubServices.prototype.getFollowers("",this.state.userGithub.login);
+      await this.props.thunkFetchFollowers(this.props.gitHub.userDetails.login);
 
-      if(result!=null) {
 
-          this.setState({
-              followers: result
-          });
-      }
-        let resultRepo = await GitHubServices.prototype.getRepositories("",this.state.userGithub.login);
-
-        if(resultRepo!=null) {
-
-            this.setState({
-                repositories: resultRepo
-            });
-        }
-
-        console.log("Error",resultRepo);
     }
 
     onClick = (value:UserGitHub) => {
@@ -87,19 +66,18 @@ export class DetailUserPage extends React.Component<Props, State> {
     />
 
     renderItemUserFlat = () => <FlatList<UserGitHub>
-        data={this.state.followers}
+        data={this.props.gitHub.followers}
         renderItem={item => this.renderItemUser(item.item)} />
 
     renderItemRepository = (item:Repository) =><CardRepository repository={item} />
 
     renderItemRepositoryFlat = () =><FlatList<Repository>
-            data={this.state.repositories}
+            data={this.props.gitHub.repositories}
             renderItem={item => this.renderItemRepository(item.item)}
         />
 
 
-
-            render() {
+        render() {
         return (
             <SafeAreaView >
                 <ImageBackground source={BackgroundApp} style={styles.ImageBackground} >
@@ -108,11 +86,11 @@ export class DetailUserPage extends React.Component<Props, State> {
 
                         <View style={styles.ViewColumn}>
                             <View style={styles.ViewImage}>
-                                    <Image source={ {uri:this.state.userGithub.avatar_url}} style={styles.AvatarStyle}/>
+                                    <Image source={ {uri:this.props.gitHub.userDetails.avatar_url}} style={styles.AvatarStyle}/>
                             </View>
-                            <CardDetailRow title={"Username: "}  value={this.state.userGithub.login} />
-                            <CardDetailRow title={"GitUrl:   "}  value={this.state.userGithub.gists_url} />
-                            <CardDetailRow title={"HtmlUrl:   "}  value={this.state.userGithub.html_url} />
+                            <CardDetailRow title={"Username: "}  value={this.props.gitHub.userDetails.login} />
+                            <CardDetailRow title={"GitUrl:   "}  value={this.props.gitHub.userDetails.gists_url} />
+                            <CardDetailRow title={"HtmlUrl:   "}  value={this.props.gitHub.userDetails.html_url} />
 
                             <ShowHiddenComponent renderItem={this.renderItemUserFlat} title={"Followers:"}/>
 
@@ -131,7 +109,7 @@ export class DetailUserPage extends React.Component<Props, State> {
     }
 }
 
-const styles = StyleSheet.create({
+export const styles = StyleSheet.create({
     ImageBackground: {
 
         width:'100%',
@@ -164,4 +142,15 @@ const styles = StyleSheet.create({
 
 });
 
-export default styles;
+const mapStateToProps = (state: AppState) => ({
+
+    gitHub: state.github,
+
+});
+
+export default connect(
+    mapStateToProps,
+    {  thunkFetchRepositories,thunkFetchFollowers  }
+)(DetailUserPage);
+
+

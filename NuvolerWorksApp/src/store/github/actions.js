@@ -22,3 +22,10 @@ function setFollowers(filter) {
     };
 }
 exports.setFollowers = setFollowers;
+function setUserDetails(userDetails) {
+    return {
+        type: types_1.SET_USERDETAILS,
+        payload: userDetails
+    };
+}
+exports.setUserDetails = setUserDetails;

@@ -2,7 +2,7 @@ import {
 
     SetFollowersAction,
     SetRepositoriesAction,
-    SetUSerAction, SET_FOLLOWERS, SET_REPOSITORIES, SET_USERS
+    SetUSerAction, SET_FOLLOWERS, SET_REPOSITORIES, SET_USERS, SetUSerDetailsAction, SET_USERDETAILS
 } from "./types";
 import {Repository} from "../../Model/Repository";
 import {UserGitHub} from "../../Model/UserGitHub";
@@ -29,3 +29,11 @@ export function setFollowers(filter:Array<UserGitHub>) :SetFollowersAction{
         payload:filter
     };
 }
+
+export function setUserDetails(userDetails:UserGitHub) :SetUSerDetailsAction{
+    return {
+        type: SET_USERDETAILS,
+        payload:userDetails
+    };
+}
+

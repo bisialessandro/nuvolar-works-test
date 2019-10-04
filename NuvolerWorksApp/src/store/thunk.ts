@@ -20,6 +20,19 @@ export const thunkFetchUsers = (
 export const thunkFetchRepositories = (
     userName: string
 ): ThunkAction<void, AppState, null, Action<string>> => async dispatch => {
+    const asyncResp = await  GitHubServices.prototype.getRepositories("",userName);
+    console.log("asyncRespo",asyncResp);
+    if(asyncResp!=null){
+        dispatch(
+            setRepositories( asyncResp)
+        );
+    }
+};
+
+
+export const thunkFetchFollowers = (
+    userName: string
+): ThunkAction<void, AppState, null, Action<string>> => async dispatch => {
     const asyncResp = await  GitHubServices.prototype.getFollowers("",userName);
     console.log("asyncRespo",asyncResp);
     if(asyncResp!=null){
@@ -28,6 +41,7 @@ export const thunkFetchRepositories = (
         );
     }
 };
+
 
 
 

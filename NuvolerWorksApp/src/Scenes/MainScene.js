@@ -84,6 +84,8 @@ var MainScene = /** @class */ (function (_super) {
             }
         };
         _this.onClick = function (value) {
+            _this.props.setUserDetails(value);
+            console.log("detille", _this.props.gitHub.userDetails);
             _this.props.navigation.navigate("DetailUser", { 'user': value });
         };
         _this.renderItem = function (user) { return react_1.default.createElement(CardUser_1.CardUser, { user: user, onClick: _this.onClick, key: user.id, showArrow: true }); };
@@ -131,4 +133,4 @@ exports.styles = react_native_1.StyleSheet.create({
 var mapStateToProps = function (state) { return ({
     gitHub: state.github,
 }); };
-exports.default = react_redux_1.connect(mapStateToProps, { setUsers: actions_1.setUsers, thunkFetchUsers: thunk_1.thunkFetchUsers })(MainScene);
+exports.default = react_redux_1.connect(mapStateToProps, { setUserDetails: actions_1.setUserDetails, setUsers: actions_1.setUsers, thunkFetchUsers: thunk_1.thunkFetchUsers })(MainScene);

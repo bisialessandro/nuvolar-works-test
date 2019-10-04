@@ -5,12 +5,19 @@ import {Repository} from "../../Model/Repository";
 export interface GitHubState{
     repositories:Array<Repository>,
     users:Array<UserGitHub>,
-    followers:Array<UserGitHub>
+    followers:Array<UserGitHub>,
+    userDetails:UserGitHub
 }
 // Describing the different ACTION NAMES available
 export const SET_USERS = "SET_USERS";
 export const SET_FOLLOWERS = "SET_FOLLOWERS";
 export const SET_REPOSITORIES = "SET_REPOSITORIES";
+export const SET_USERDETAILS = "SET_USERDETAILS";
+
+export interface SetUSerDetailsAction {
+    type: typeof SET_USERDETAILS;
+    payload: UserGitHub;
+}
 
 export interface SetUSerAction {
     type: typeof SET_USERS;
@@ -28,4 +35,4 @@ export interface SetFollowersAction {
     payload: Array<UserGitHub>;
 }
 
-export type GitHubActionTypes = SetUSerAction | SetRepositoriesAction |SetFollowersAction;
+export type GitHubActionTypes = SetUSerAction | SetRepositoriesAction |SetFollowersAction|SetUSerDetailsAction ;

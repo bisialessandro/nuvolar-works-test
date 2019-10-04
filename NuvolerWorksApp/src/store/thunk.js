@@ -57,6 +57,21 @@ exports.thunkFetchRepositories = function (userName) { return function (dispatch
     var asyncResp;
     return __generator(this, function (_a) {
         switch (_a.label) {
+            case 0: return [4 /*yield*/, GitHubServices_1.GitHubServices.prototype.getRepositories("", userName)];
+            case 1:
+                asyncResp = _a.sent();
+                console.log("asyncRespo", asyncResp);
+                if (asyncResp != null) {
+                    dispatch(actions_1.setRepositories(asyncResp));
+                }
+                return [2 /*return*/];
+        }
+    });
+}); }; };
+exports.thunkFetchFollowers = function (userName) { return function (dispatch) { return __awaiter(void 0, void 0, void 0, function () {
+    var asyncResp;
+    return __generator(this, function (_a) {
+        switch (_a.label) {
             case 0: return [4 /*yield*/, GitHubServices_1.GitHubServices.prototype.getFollowers("", userName)];
             case 1:
                 asyncResp = _a.sent();

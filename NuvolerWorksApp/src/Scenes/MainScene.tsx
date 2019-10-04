@@ -11,7 +11,7 @@ import { connect } from "react-redux";
 import { AppState } from "../store";
 
 import { GitHubState } from "../store/github/types";
-import { setUsers} from "../store/github/actions";
+import {setUserDetails, setUsers} from "../store/github/actions";
 import {thunkFetchUsers} from "../store/thunk";
 
 
@@ -22,8 +22,9 @@ interface Props {
 
 interface AppProps{
     setUsers:typeof setUsers;
+    setUserDetails:typeof setUserDetails;
     gitHub: GitHubState;
-    thunkSendMessage: any;
+    thunkFetchUser: any;
 
 }
 interface State {
@@ -93,6 +94,9 @@ class MainScene extends React.Component<Props, State,AppProps> {
 
     onClick = (value:UserGitHub) => {
 
+         this.props.setUserDetails(value);
+
+         console.log("detille",this.props.gitHub.userDetails);
 
         this.props.navigation.navigate("DetailUser",{'user':value});
 
@@ -141,5 +145,5 @@ const mapStateToProps = (state: AppState) => ({
 
 export default connect(
     mapStateToProps,
-    {  setUsers,thunkFetchUsers}
+    { setUserDetails, setUsers,thunkFetchUsers}
 )(MainScene);

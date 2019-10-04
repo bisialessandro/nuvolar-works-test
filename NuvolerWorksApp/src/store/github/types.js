@@ -4,3 +4,4 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.SET_USERS = "SET_USERS";
 exports.SET_FOLLOWERS = "SET_FOLLOWERS";
 exports.SET_REPOSITORIES = "SET_REPOSITORIES";
+exports.SET_USERDETAILS = "SET_USERDETAILS";

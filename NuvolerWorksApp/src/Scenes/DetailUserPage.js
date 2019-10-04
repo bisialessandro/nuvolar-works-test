@@ -53,12 +53,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var react_1 = __importDefault(require("react"));
-var GitHubServices_1 = require("../Network/GitHubServices");
 var react_native_1 = require("react-native");
 var CardDetailRow_1 = require("../Components/CardComponents/CardDetailRow");
 var CardUser_1 = require("../Components/CardComponents/CardUser");
 var CardRepository_1 = require("../Components/CardComponents/CardRepository");
 var ShowHiddenComponent_1 = require("../Components/ShowHiddenComponent");
+var react_redux_1 = require("react-redux");
+var thunk_1 = require("../store/thunk");
 var BackgroundApp = require('../Assets/images/BackgroundApp.png');
 ;
 var DetailUserPage = /** @class */ (function (_super) {
@@ -68,42 +69,21 @@ var DetailUserPage = /** @class */ (function (_super) {
         _this.onClick = function (value) {
         };
         _this.renderItemUser = function (item) { return react_1.default.createElement(CardUser_1.CardUser, { user: item, onClick: _this.onClick, showArrow: false }); };
-        _this.renderItemUserFlat = function () { return react_1.default.createElement(react_native_1.FlatList, { data: _this.state.followers, renderItem: function (item) { return _this.renderItemUser(item.item); } }); };
+        _this.renderItemUserFlat = function () { return react_1.default.createElement(react_native_1.FlatList, { data: _this.props.gitHub.followers, renderItem: function (item) { return _this.renderItemUser(item.item); } }); };
         _this.renderItemRepository = function (item) { return react_1.default.createElement(CardRepository_1.CardRepository, { repository: item }); };
-        _this.renderItemRepositoryFlat = function () { return react_1.default.createElement(react_native_1.FlatList, { data: _this.state.repositories, renderItem: function (item) { return _this.renderItemRepository(item.item); } }); };
-        var userDetails = _this.props.navigation.getParam('user', null);
-        if (userDetails == null) {
-            console.log("Error", userDetails);
-        }
-        _this.state = ({
-            followers: [],
-            repositories: [],
-            userGithub: userDetails,
-        });
+        _this.renderItemRepositoryFlat = function () { return react_1.default.createElement(react_native_1.FlatList, { data: _this.props.gitHub.repositories, renderItem: function (item) { return _this.renderItemRepository(item.item); } }); };
         return _this;
     }
     DetailUserPage.prototype.componentDidMount = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var result, resultRepo;
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, GitHubServices_1.GitHubServices.prototype.getFollowers("", this.state.userGithub.login)];
+                    case 0: return [4 /*yield*/, this.props.thunkFetchRepositories(this.props.gitHub.userDetails.login)];
                     case 1:
-                        result = _a.sent();
-                        if (result != null) {
-                            this.setState({
-                                followers: result
-                            });
-                        }
-                        return [4 /*yield*/, GitHubServices_1.GitHubServices.prototype.getRepositories("", this.state.userGithub.login)];
+                        _a.sent();
+                        return [4 /*yield*/, this.props.thunkFetchFollowers(this.props.gitHub.userDetails.login)];
                     case 2:
-                        resultRepo = _a.sent();
-                        if (resultRepo != null) {
-                            this.setState({
-                                repositories: resultRepo
-                            });
-                        }
-                        console.log("Error", resultRepo);
+                        _a.sent();
                         return [2 /*return*/];
                 }
             });
@@ -111,21 +91,20 @@ var DetailUserPage = /** @class */ (function (_super) {
     };
     DetailUserPage.prototype.render = function () {
         return (react_1.default.createElement(react_native_1.SafeAreaView, null,
-            react_1.default.createElement(react_native_1.ImageBackground, { source: BackgroundApp, style: styles.ImageBackground },
+            react_1.default.createElement(react_native_1.ImageBackground, { source: BackgroundApp, style: exports.styles.ImageBackground },
                 react_1.default.createElement(react_native_1.ScrollView, null,
-                    react_1.default.createElement(react_native_1.View, { style: styles.ViewColumn },
-                        react_1.default.createElement(react_native_1.View, { style: styles.ViewImage },
-                            react_1.default.createElement(react_native_1.Image, { source: { uri: this.state.userGithub.avatar_url }, style: styles.AvatarStyle })),
-                        react_1.default.createElement(CardDetailRow_1.CardDetailRow, { title: "Username: ", value: this.state.userGithub.login }),
-                        react_1.default.createElement(CardDetailRow_1.CardDetailRow, { title: "GitUrl:   ", value: this.state.userGithub.gists_url }),
-                        react_1.default.createElement(CardDetailRow_1.CardDetailRow, { title: "HtmlUrl:   ", value: this.state.userGithub.html_url }),
+                    react_1.default.createElement(react_native_1.View, { style: exports.styles.ViewColumn },
+                        react_1.default.createElement(react_native_1.View, { style: exports.styles.ViewImage },
+                            react_1.default.createElement(react_native_1.Image, { source: { uri: this.props.gitHub.userDetails.avatar_url }, style: exports.styles.AvatarStyle })),
+                        react_1.default.createElement(CardDetailRow_1.CardDetailRow, { title: "Username: ", value: this.props.gitHub.userDetails.login }),
+                        react_1.default.createElement(CardDetailRow_1.CardDetailRow, { title: "GitUrl:   ", value: this.props.gitHub.userDetails.gists_url }),
+                        react_1.default.createElement(CardDetailRow_1.CardDetailRow, { title: "HtmlUrl:   ", value: this.props.gitHub.userDetails.html_url }),
                         react_1.default.createElement(ShowHiddenComponent_1.ShowHiddenComponent, { renderItem: this.renderItemUserFlat, title: "Followers:" }),
                         react_1.default.createElement(ShowHiddenComponent_1.ShowHiddenComponent, { renderItem: this.renderItemRepositoryFlat, title: "Repositories:" }))))));
     };
     return DetailUserPage;
 }(react_1.default.Component));
-exports.DetailUserPage = DetailUserPage;
-var styles = react_native_1.StyleSheet.create({
+exports.styles = react_native_1.StyleSheet.create({
     ImageBackground: {
         width: '100%',
         height: '100%'
@@ -153,4 +132,7 @@ var styles = react_native_1.StyleSheet.create({
         height: '40px'
     },
 });
-exports.default = styles;
+var mapStateToProps = function (state) { return ({
+    gitHub: state.github,
+}); };
+exports.default = react_redux_1.connect(mapStateToProps, { thunkFetchRepositories: thunk_1.thunkFetchRepositories, thunkFetchFollowers: thunk_1.thunkFetchFollowers })(DetailUserPage);

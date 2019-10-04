@@ -3,14 +3,26 @@
   <component name="ChangeListManager">
     <list default="true" id="7394f5d7-b051-41ac-8cdb-75674d794857" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Router/MainStackNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Router/MainStackNavigator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Router/MainStackNavigator.ts" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Router/MainStackNavigator.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/DetailUserPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/DetailUserPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/DetailUserPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/DetailUserPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/MainScene.js" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/MainScene.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/MainScene.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/MainScene.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/store/chat/actions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/store/chat/actions.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/store/chat/reducers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/store/chat/reducers.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/store/chat/types.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/store/chat/types.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/store/github/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/store/github/actions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/store/github/actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/store/github/actions.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/store/github/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/store/github/reducers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/store/github/reducers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/store/github/reducers.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/store/github/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/store/github/types.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/store/github/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/store/github/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/store/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/store/thunk.js" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/store/thunk.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/store/thunk.ts" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/store/thunk.ts" afterDir="false" />
     </list>
@@ -132,7 +144,7 @@
       <workItem from="1570013963633" duration="11887000" />
       <workItem from="1570035460099" duration="17744000" />
       <workItem from="1570108881932" duration="29212000" />
-      <workItem from="1570178658803" duration="3082000" />
+      <workItem from="1570178658803" duration="6549000" />
     </task>
     <servers />
   </component>
