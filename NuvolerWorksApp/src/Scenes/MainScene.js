@@ -57,25 +57,13 @@ var GitHubServices_1 = require("../Network/GitHubServices");
 var react_native_1 = require("react-native");
 var CardUser_1 = require("../Components/CardComponents/CardUser");
 var BackgroundApp = require('../Assets/images/BackgroundApp.png');
+var react_redux_1 = require("react-redux");
+var actions_1 = require("../store/github/actions");
 ;
 var MainScene = /** @class */ (function (_super) {
     __extends(MainScene, _super);
     function MainScene(props) {
         var _this = _super.call(this, props) || this;
-        /*async requestData(){
-    
-    
-            let gitHubServ = new GitHubServices();
-    
-            //let result = await gitHubServ.getUsers("q=tom+repos:%3E42+followers:%3E1000");
-            let result = await gitHubServ.getUsers("q=language:typeScript");
-    
-    
-            this.setState({filteredList:result?result:[]});
-            this.setState({listUser:result?result:[]});
-    
-        }
-    */
         _this.filterUser = function (value) {
             var newArray;
             newArray = [];
@@ -97,7 +85,7 @@ var MainScene = /** @class */ (function (_super) {
         _this.onClick = function (value) {
             _this.props.navigation.navigate("DetailUser", { 'user': value });
         };
-        _this.renderItem = function (item) { return react_1.default.createElement(CardUser_1.CardUser, { user: item, onClick: _this.onClick, key: item.id, showArrow: true }); };
+        _this.renderItem = function (user) { return react_1.default.createElement(CardUser_1.CardUser, { user: user, onClick: _this.onClick, key: user.id, showArrow: true }); };
         _this.state = {
             listUser: [],
             filteredList: []
@@ -124,14 +112,13 @@ var MainScene = /** @class */ (function (_super) {
     MainScene.prototype.render = function () {
         var _this = this;
         return (react_1.default.createElement(react_native_1.SafeAreaView, null,
-            react_1.default.createElement(react_native_1.ImageBackground, { source: BackgroundApp, style: styles.ImageBackground },
+            react_1.default.createElement(react_native_1.ImageBackground, { source: BackgroundApp, style: exports.styles.ImageBackground },
                 react_1.default.createElement(SearchBar_1.SearchBar, { placeholder: "Insert a username", callback: this.onChangeText }),
                 react_1.default.createElement(react_native_1.FlatList, { data: this.state.filteredList, renderItem: function (item) { return _this.renderItem(item.item); } }))));
     };
     return MainScene;
 }(react_1.default.Component));
-exports.MainScene = MainScene;
-var styles = react_native_1.StyleSheet.create({
+exports.styles = react_native_1.StyleSheet.create({
     ImageBackground: {
         width: '100%',
         height: '100%'
@@ -140,4 +127,7 @@ var styles = react_native_1.StyleSheet.create({
         margin: '10px'
     }
 });
-exports.default = styles;
+var mapStateToProps = function (state) { return ({
+    repository: state.github.repositories
+}); };
+exports.default = react_redux_1.connect(mapStateToProps, { getRepositories: actions_1.getRepositories })(MainScene);

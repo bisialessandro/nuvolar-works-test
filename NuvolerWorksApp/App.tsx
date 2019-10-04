@@ -7,16 +7,19 @@
  */
 
 import React from 'react';
-//import {MainScene} from './src/Scenes/MainScene';
-//import {SafeAreaView} from "react-native";
+import configureStore from "./src/store";
+import { Provider} from 'react-redux';
 import SwitchNavigator from './src/Router/SwitchNavigator';
 import {createAppContainer} from "react-navigation";
+const store = configureStore();
 
 const AppNavigator = createAppContainer(SwitchNavigator );
 
 const App: () => React$Node = () => {
   return (
-    <AppNavigator/>
+      <Provider store={store}>
+          <AppNavigator/>
+      </Provider>
   );
 };
 

@@ -2,12 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7394f5d7-b051-41ac-8cdb-75674d794857" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Components/ShowHiddenComponent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Config/config.redux.persist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/store/chat/actions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/store/chat/reducers.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/store/chat/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/store/github/actions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/store/github/reducers.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/store/github/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/store/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/store/thunk.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Components/CardComponents/CardDetailRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Components/CardComponents/CardDetailRow.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Components/CardComponents/CardDetailRow.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Components/CardComponents/CardDetailRow.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/DetailUserPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/DetailUserPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/DetailUserPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/DetailUserPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Router/MainStackNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Router/MainStackNavigator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Router/MainStackNavigator.ts" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Router/MainStackNavigator.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/MainScene.js" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/MainScene.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/MainScene.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/MainScene.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +31,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -35,7 +47,7 @@
   <component name="ProjectId" id="1RhAJJwFS50HHKa4Qe0XbrBPqz8" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/NuvolerWorksApp/src/Assets/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/NuvolerWorksApp/src/store/github" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -44,9 +56,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/NuvolerWorksApp/src/store/github" />
+      <recent name="$PROJECT_DIR$/NuvolerWorksApp/src/Config" />
+      <recent name="$PROJECT_DIR$/NuvolerWorksApp/src/Redux" />
       <recent name="$PROJECT_DIR$/NuvolerWorksApp/src/Assets/images" />
       <recent name="$PROJECT_DIR$/NuvolerWorksApp/src/network" />
-      <recent name="$PROJECT_DIR$/NuvolerWorksApp/src/Styles" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/NuvolerWorksApp/src/Components/CardComponents" />
@@ -68,7 +82,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.ios">
+  <component name="RunManager" selected="npm.android">
     <configuration name="android" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/NuvolerWorksApp/package.json" />
       <command value="run" />
@@ -106,8 +120,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.ios" />
         <item itemvalue="npm.android" />
+        <item itemvalue="npm.ios" />
         <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
@@ -124,7 +138,7 @@
       <updated>1570013962324</updated>
       <workItem from="1570013963633" duration="11887000" />
       <workItem from="1570035460099" duration="17744000" />
-      <workItem from="1570108881932" duration="21450000" />
+      <workItem from="1570108881932" duration="29094000" />
     </task>
     <servers />
   </component>
@@ -132,20 +146,24 @@
     <option name="version" value="1" />
     <option name="exactExcludedFiles">
       <list>
+        <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Redux/utils/utils-types.js" />
+        <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Redux/utils/utils-actions.js" />
+        <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Model/Repository.js" />
+        <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Redux/utils/util-reducers.js" />
+        <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/DetailUserPage.js" />
+        <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Styles/Font.js" />
+        <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Redux/chat/reducers.js" />
+        <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Redux/index.js" />
+        <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Components/ShowHiddenComponent.js" />
         <option value="$PROJECT_DIR$/NuvolerWorksApp/__tests__/App-test.js" />
         <option value="$PROJECT_DIR$/NuvolerWorksApp/App.js" />
-        <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Components/CardDetailRow.js" />
-        <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Components/CardUser.js" />
         <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Styles/Colors.js" />
-        <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Model/Repository.js" />
-        <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/DetailUserPage.js" />
         <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Utils/UtilsImage.js" />
         <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Styles/Font.tsx.js" />
-        <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Components/DetailsComponent.js" />
-        <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Components/HidebaleComponent.js" />
-        <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Components/CardRepository.js" />
-        <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Styles/Font.js" />
-        <option value="$PROJECT_DIR$/NuvolerWorksApp/src/Components/ShowHiddenComponent.js" />
+        <option value="$PROJECT_DIR$/NuvolerWorksApp/src/store/github/reducers.js" />
+        <option value="$PROJECT_DIR$/NuvolerWorksApp/src/store/github/actions.js" />
+        <option value="$PROJECT_DIR$/NuvolerWorksApp/src/store/github/types.js" />
+        <option value="$PROJECT_DIR$/NuvolerWorksApp/src/store/thunk.js" />
       </list>
     </option>
   </component>
