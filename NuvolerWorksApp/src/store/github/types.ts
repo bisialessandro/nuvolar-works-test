@@ -12,18 +12,18 @@ export const GET_USERS = "GET_USERS";
 export const GET_FOLLOWERS = "GET_FOLLOWERS";
 export const GET_REPOSITORIES = "GET_REPOSITORIES";
 
-interface GetUSerAction {
+export interface GetUSerAction {
     type: typeof GET_USERS;
     payload: Array<UserGitHub>;
 }
 
-interface GetRepositoriesAction {
+export interface GetRepositoriesAction {
     type: typeof GET_REPOSITORIES;
     payload:Array<Repository>
 
 }
 
-interface GetFollowersAction {
+export interface GetFollowersAction {
     type: typeof GET_FOLLOWERS;
     payload: Array<UserGitHub>;
 }

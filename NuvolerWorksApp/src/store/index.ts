@@ -2,8 +2,6 @@ import { createStore, combineReducers, applyMiddleware } from "redux";
 import thunkMiddleware from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension";
 
-
-
 import { chatReducer } from "./chat/reducers";
 import { gitHubReducer } from "./github/reducers";
 

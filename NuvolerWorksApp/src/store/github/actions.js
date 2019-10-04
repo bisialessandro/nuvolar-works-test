@@ -1,24 +1,24 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var types_1 = require("./types");
-function getRepositories(user) {
+function fetchRepositories(user) {
     return {
         type: types_1.GET_REPOSITORIES,
         payload: user
     };
 }
-exports.getRepositories = getRepositories;
-function getUsers(user) {
+exports.fetchRepositories = fetchRepositories;
+function fetchUsers(users) {
     return {
         type: types_1.GET_USERS,
-        payload: user
+        payload: users
     };
 }
-exports.getUsers = getUsers;
-function getFollowers(filter) {
+exports.fetchUsers = fetchUsers;
+function fetchFollowers(filter) {
     return {
         type: types_1.GET_FOLLOWERS,
         payload: filter
     };
 }
-exports.getFollowers = getFollowers;
+exports.fetchFollowers = fetchFollowers;

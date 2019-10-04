@@ -2,20 +2,32 @@ import { Action } from "redux";
 import { ThunkAction } from "redux-thunk";
 import { sendMessage } from "./chat/actions";
 import { AppState } from "./index";
+import {GitHubServices} from "../Network/GitHubServices";
+import {fetchFollowers, fetchRepositories, fetchUsers} from "./github/actions";
 
-export const thunkSendMessage = (
-    message: string
+export const thunkFetchUsers = (
+    param: string
 ): ThunkAction<void, AppState, null, Action<string>> => async dispatch => {
-    const asyncResp = await exampleAPI();
-    dispatch(
-        sendMessage({
-            message,
-            user: asyncResp,
-            timestamp: new Date().getTime()
-        })
-    );
+    const asyncResp = await GitHubServices.prototype.getUsers("q=language:typeScript");
+    console.log("asyncRespo",asyncResp);
+    if(asyncResp!=null){
+        dispatch(
+            fetchUsers( asyncResp)
+        );
+    }
 };
 
-function exampleAPI() {
-    return Promise.resolve("Async Chat Bot");
-}
+export const thunkFetchRepositories = (
+    userName: string
+): ThunkAction<void, AppState, null, Action<string>> => async dispatch => {
+    const asyncResp = await  GitHubServices.prototype.getFollowers("",userName);
+    console.log("asyncRespo",asyncResp);
+    if(asyncResp!=null){
+        dispatch(
+            fetchFollowers( asyncResp)
+        );
+    }
+};
+
+
+

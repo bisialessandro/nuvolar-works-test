@@ -11,9 +11,9 @@ import { connect } from "react-redux";
 import { AppState } from "../store";
 
 import { GitHubState } from "../store/github/types";
-import {  getRepositories } from "../store/github/actions";
-import {  getUsers} from "../store/github/actions";
-import {thunkGetUsers} from "../store/thunk";
+import {  fetchRepositories } from "../store/github/actions";
+import { fetchUsers} from "../store/github/actions";
+import {thunkFetchUsers} from "../store/thunk";
 
 
 interface Props {
@@ -22,10 +22,12 @@ interface Props {
 };
 
 interface AppProps{
-    getRepositories: typeof  getRepositories;
-    getUsers:typeof getUsers;
-    gitHubState: GitHubState;
-    thunkGetUsers :any;
+    fetchRepositories: typeof  fetchRepositories;
+    fetchUsers:typeof fetchUsers;
+    gitHub: GitHubState;
+    thunkSendMessage: any;
+    users:Array<UserGitHub>
+
 }
 interface State {
 
@@ -47,29 +49,16 @@ class MainScene extends React.Component<Props, State,AppProps> {
 
     async componentDidMount(){
 
-       /*this.props.sendMessage({
-            user: "Chat Bot",
-            message:
-                "This is a very basic chat application written in typescript using react and redux. Feel free to explore the source code.",
-            timestamp: new Date().getTime()
-        });
-this.props.thunkGetUsers();
 
-        console.log("stampa",this.props.gitHubState.users);
-
-        console.log("stampa",this.props.chat.messages);*/
+        console.log("stampa",this.props.gitHub.users)
+        await this.props.thunkFetchUsers("This message was sent by a thunk!");
+        console.log("stampa",this.props.gitHub.users)
 
 
 
 
-        let gitHubServ = new GitHubServices();
-
-        //let result = await gitHubServ.getUsers("q=tom+repos:%3E42+followers:%3E1000");
-        let result = await gitHubServ.getUsers("q=language:typeScript");
-
-
-        this.setState({filteredList:result?result:[]});
-        this.setState({listUser:result?result:[]});
+        this.setState({filteredList:this.props.gitHub.users});
+        this.setState({listUser:this.props.gitHub.users);
 
     }
 
@@ -150,10 +139,12 @@ export const styles = StyleSheet.create({
 
 
 const mapStateToProps = (state: AppState) => ({
-    repository: state.github.repositories
+
+    gitHub: state.github,
+
 });
 
 export default connect(
     mapStateToProps,
-    {  getRepositories}
+    {  fetchRepositories,fetchUsers,thunkFetchUsers}
 )(MainScene);

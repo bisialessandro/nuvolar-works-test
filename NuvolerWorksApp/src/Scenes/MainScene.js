@@ -13,10 +13,11 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
         function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
         function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
@@ -53,12 +54,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var react_1 = __importDefault(require("react"));
 var SearchBar_1 = require("../Components/SearchBar");
-var GitHubServices_1 = require("../Network/GitHubServices");
 var react_native_1 = require("react-native");
 var CardUser_1 = require("../Components/CardComponents/CardUser");
 var BackgroundApp = require('../Assets/images/BackgroundApp.png');
 var react_redux_1 = require("react-redux");
 var actions_1 = require("../store/github/actions");
+var actions_2 = require("../store/github/actions");
+var thunk_1 = require("../store/thunk");
 ;
 var MainScene = /** @class */ (function (_super) {
     __extends(MainScene, _super);
@@ -94,16 +96,16 @@ var MainScene = /** @class */ (function (_super) {
     }
     MainScene.prototype.componentDidMount = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var gitHubServ, result;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        gitHubServ = new GitHubServices_1.GitHubServices();
-                        return [4 /*yield*/, gitHubServ.getUsers("q=language:typeScript")];
+                        console.log("stampa", this.props.gitHub.users);
+                        return [4 /*yield*/, this.props.thunkFetchUsers("This message was sent by a thunk!")];
                     case 1:
-                        result = _a.sent();
-                        this.setState({ filteredList: result ? result : [] });
-                        this.setState({ listUser: result ? result : [] });
+                        _a.sent();
+                        console.log("stampa", this.props.gitHub.users);
+                        this.setState({ filteredList: this.props.gitHub.users });
+                        this.setState({ listUser: this.props.gitHub.users });
                         return [2 /*return*/];
                 }
             });
@@ -128,6 +130,6 @@ exports.styles = react_native_1.StyleSheet.create({
     }
 });
 var mapStateToProps = function (state) { return ({
-    repository: state.github.repositories
+    gitHub: state.github,
 }); };
-exports.default = react_redux_1.connect(mapStateToProps, { getRepositories: actions_1.getRepositories })(MainScene);
+exports.default = react_redux_1.connect(mapStateToProps, { fetchRepositories: actions_1.fetchRepositories, fetchUsers: actions_2.fetchUsers, thunkFetchUsers: thunk_1.thunkFetchUsers })(MainScene);

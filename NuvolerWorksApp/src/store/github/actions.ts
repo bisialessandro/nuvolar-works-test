@@ -1,9 +1,17 @@
-import { GET_FOLLOWERS, GET_REPOSITORIES,GET_USERS } from "./types";
+import {
+    GET_FOLLOWERS,
+    GET_REPOSITORIES,
+    GET_USERS,
+    GetFollowersAction,
+    GetRepositoriesAction,
+    GetUSerAction
+} from "./types";
 import {Repository} from "../../Model/Repository";
 import {UserGitHub} from "../../Model/UserGitHub";
 import {GitHubServices} from "../../Network/GitHubServices";
 
-export function getRepositories(user:string) {
+export function fetchRepositories(user:Array<Repository>) :GetRepositoriesAction {
+
 
     return {
         type: GET_REPOSITORIES,
@@ -11,16 +19,20 @@ export function getRepositories(user:string) {
     };
 }
 
-export function getUsers(user:string) {
+export function fetchUsers(users:Array<UserGitHub>) :GetUSerAction{
+
 
 
     return {
-        type: GET_USERS,
-        payload:user
-    };
+            type: GET_USERS,
+            payload:users
+        };
+
+
+
 }
 
-export function getFollowers(filter:string) {
+export function fetchFollowers(filter:Array<UserGitHub>) :GetFollowersAction{
     return {
         type: GET_FOLLOWERS,
         payload:filter

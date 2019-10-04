@@ -15,14 +15,17 @@ export function gitHubReducer(
     switch (action.type) {
         case GET_USERS:
             return {
-                users: UserGitHub.prototype.toUser(action.payload)
+                ...state,
+                users: action.payload
             };
         case GET_REPOSITORIES:
             return {
+                ...state,
                 repositories: action.payload
             };
         case GET_FOLLOWERS:
             return {
+                ...state,
                 followers: action.payload
             };
         default:

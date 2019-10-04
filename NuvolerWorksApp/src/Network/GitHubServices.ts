@@ -5,7 +5,7 @@ const axios = require('axios');
 
 export class GitHubServices{
 
-   public async  getUsers(queryParam: string){
+   public async getUsers(queryParam: string){
 
        try {
 
