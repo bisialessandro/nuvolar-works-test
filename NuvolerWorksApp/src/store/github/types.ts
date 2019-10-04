@@ -8,24 +8,24 @@ export interface GitHubState{
     followers:Array<UserGitHub>
 }
 // Describing the different ACTION NAMES available
-export const GET_USERS = "GET_USERS";
-export const GET_FOLLOWERS = "GET_FOLLOWERS";
-export const GET_REPOSITORIES = "GET_REPOSITORIES";
+export const SET_USERS = "SET_USERS";
+export const SET_FOLLOWERS = "SET_FOLLOWERS";
+export const SET_REPOSITORIES = "SET_REPOSITORIES";
 
-export interface GetUSerAction {
-    type: typeof GET_USERS;
+export interface SetUSerAction {
+    type: typeof SET_USERS;
     payload: Array<UserGitHub>;
 }
 
-export interface GetRepositoriesAction {
-    type: typeof GET_REPOSITORIES;
+export interface SetRepositoriesAction {
+    type: typeof SET_REPOSITORIES;
     payload:Array<Repository>
 
 }
 
-export interface GetFollowersAction {
-    type: typeof GET_FOLLOWERS;
+export interface SetFollowersAction {
+    type: typeof SET_FOLLOWERS;
     payload: Array<UserGitHub>;
 }
 
-export type GitHubActionTypes = GetUSerAction | GetRepositoriesAction |GetFollowersAction;
+export type GitHubActionTypes = SetUSerAction | SetRepositoriesAction |SetFollowersAction;

@@ -59,7 +59,6 @@ var CardUser_1 = require("../Components/CardComponents/CardUser");
 var BackgroundApp = require('../Assets/images/BackgroundApp.png');
 var react_redux_1 = require("react-redux");
 var actions_1 = require("../store/github/actions");
-var actions_2 = require("../store/github/actions");
 var thunk_1 = require("../store/thunk");
 ;
 var MainScene = /** @class */ (function (_super) {
@@ -132,4 +131,4 @@ exports.styles = react_native_1.StyleSheet.create({
 var mapStateToProps = function (state) { return ({
     gitHub: state.github,
 }); };
-exports.default = react_redux_1.connect(mapStateToProps, { fetchRepositories: actions_1.fetchRepositories, fetchUsers: actions_2.fetchUsers, thunkFetchUsers: thunk_1.thunkFetchUsers })(MainScene);
+exports.default = react_redux_1.connect(mapStateToProps, { setUsers: actions_1.setUsers, thunkFetchUsers: thunk_1.thunkFetchUsers })(MainScene);

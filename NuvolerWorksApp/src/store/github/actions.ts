@@ -1,40 +1,31 @@
 import {
-    GET_FOLLOWERS,
-    GET_REPOSITORIES,
-    GET_USERS,
-    GetFollowersAction,
-    GetRepositoriesAction,
-    GetUSerAction
+
+    SetFollowersAction,
+    SetRepositoriesAction,
+    SetUSerAction, SET_FOLLOWERS, SET_REPOSITORIES, SET_USERS
 } from "./types";
 import {Repository} from "../../Model/Repository";
 import {UserGitHub} from "../../Model/UserGitHub";
 import {GitHubServices} from "../../Network/GitHubServices";
 
-export function fetchRepositories(user:Array<Repository>) :GetRepositoriesAction {
-
-
+export function setRepositories(user:Array<Repository>) :SetRepositoriesAction {
     return {
-        type: GET_REPOSITORIES,
+        type: SET_REPOSITORIES,
         payload: user
     };
 }
 
-export function fetchUsers(users:Array<UserGitHub>) :GetUSerAction{
-
-
-
+export function setUsers(users:Array<UserGitHub>) :SetUSerAction{
     return {
-            type: GET_USERS,
+            type: SET_USERS,
             payload:users
         };
 
-
-
 }
 
-export function fetchFollowers(filter:Array<UserGitHub>) :GetFollowersAction{
+export function setFollowers(filter:Array<UserGitHub>) :SetFollowersAction{
     return {
-        type: GET_FOLLOWERS,
+        type: SET_FOLLOWERS,
         payload:filter
     };
 }

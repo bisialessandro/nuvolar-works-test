@@ -47,7 +47,7 @@ exports.thunkFetchUsers = function (param) { return function (dispatch) { return
                 asyncResp = _a.sent();
                 console.log("asyncRespo", asyncResp);
                 if (asyncResp != null) {
-                    dispatch(actions_1.fetchUsers(asyncResp));
+                    dispatch(actions_1.setUsers(asyncResp));
                 }
                 return [2 /*return*/];
         }
@@ -62,7 +62,7 @@ exports.thunkFetchRepositories = function (userName) { return function (dispatch
                 asyncResp = _a.sent();
                 console.log("asyncRespo", asyncResp);
                 if (asyncResp != null) {
-                    dispatch(actions_1.fetchFollowers(asyncResp));
+                    dispatch(actions_1.setFollowers(asyncResp));
                 }
                 return [2 /*return*/];
         }

@@ -1,5 +1,8 @@
-import {GET_FOLLOWERS, GET_REPOSITORIES, GET_USERS, GitHubActionTypes, GitHubState} from "./types";
+import {, GitHubActionTypes, GitHubState} from "./types";
 import {UserGitHub} from "../../Model/UserGitHub";
+import {SET_USERS} from "./types";
+import {SET_REPOSITORIES} from "./types";
+import {SET_FOLLOWERS} from "./types";
 
 
 const initialState:GitHubState = {
@@ -13,17 +16,17 @@ export function gitHubReducer(
     action: GitHubActionTypes
 ): GitHubState  {
     switch (action.type) {
-        case GET_USERS:
+        case SET_USERS:
             return {
                 ...state,
                 users: action.payload
             };
-        case GET_REPOSITORIES:
+        case SET_REPOSITORIES:
             return {
                 ...state,
                 repositories: action.payload
             };
-        case GET_FOLLOWERS:
+        case SET_FOLLOWERS:
             return {
                 ...state,
                 followers: action.payload

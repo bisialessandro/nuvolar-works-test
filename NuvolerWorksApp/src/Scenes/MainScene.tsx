@@ -11,8 +11,7 @@ import { connect } from "react-redux";
 import { AppState } from "../store";
 
 import { GitHubState } from "../store/github/types";
-import {  fetchRepositories } from "../store/github/actions";
-import { fetchUsers} from "../store/github/actions";
+import { setUsers} from "../store/github/actions";
 import {thunkFetchUsers} from "../store/thunk";
 
 
@@ -22,11 +21,9 @@ interface Props {
 };
 
 interface AppProps{
-    fetchRepositories: typeof  fetchRepositories;
-    fetchUsers:typeof fetchUsers;
+    setUsers:typeof setUsers;
     gitHub: GitHubState;
     thunkSendMessage: any;
-    users:Array<UserGitHub>
 
 }
 interface State {
@@ -53,8 +50,6 @@ class MainScene extends React.Component<Props, State,AppProps> {
         console.log("stampa",this.props.gitHub.users)
         await this.props.thunkFetchUsers("This message was sent by a thunk!");
         console.log("stampa",this.props.gitHub.users)
-
-
 
 
         this.setState({filteredList:this.props.gitHub.users});
@@ -146,5 +141,5 @@ const mapStateToProps = (state: AppState) => ({
 
 export default connect(
     mapStateToProps,
-    {  fetchRepositories,fetchUsers,thunkFetchUsers}
+    {  setUsers,thunkFetchUsers}
 )(MainScene);

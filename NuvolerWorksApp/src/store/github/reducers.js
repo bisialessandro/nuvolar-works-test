@@ -12,6 +12,8 @@ var __assign = (this && this.__assign) || function () {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var types_1 = require("./types");
+var types_2 = require("./types");
+var types_3 = require("./types");
 var initialState = {
     repositories: [],
     users: [],
@@ -20,11 +22,11 @@ var initialState = {
 function gitHubReducer(state, action) {
     if (state === void 0) { state = initialState; }
     switch (action.type) {
-        case types_1.GET_USERS:
+        case types_1.SET_USERS:
             return __assign(__assign({}, state), { users: action.payload });
-        case types_1.GET_REPOSITORIES:
+        case types_2.SET_REPOSITORIES:
             return __assign(__assign({}, state), { repositories: action.payload });
-        case types_1.GET_FOLLOWERS:
+        case types_3.SET_FOLLOWERS:
             return __assign(__assign({}, state), { followers: action.payload });
         default:
             return state;

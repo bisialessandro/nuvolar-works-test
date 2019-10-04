@@ -3,7 +3,7 @@ import { ThunkAction } from "redux-thunk";
 import { sendMessage } from "./chat/actions";
 import { AppState } from "./index";
 import {GitHubServices} from "../Network/GitHubServices";
-import {fetchFollowers, fetchRepositories, fetchUsers} from "./github/actions";
+import {setFollowers, setRepositories, setUsers} from "./github/actions";
 
 export const thunkFetchUsers = (
     param: string
@@ -12,7 +12,7 @@ export const thunkFetchUsers = (
     console.log("asyncRespo",asyncResp);
     if(asyncResp!=null){
         dispatch(
-            fetchUsers( asyncResp)
+            setUsers( asyncResp)
         );
     }
 };
@@ -24,7 +24,7 @@ export const thunkFetchRepositories = (
     console.log("asyncRespo",asyncResp);
     if(asyncResp!=null){
         dispatch(
-            fetchFollowers( asyncResp)
+            setFollowers( asyncResp)
         );
     }
 };
