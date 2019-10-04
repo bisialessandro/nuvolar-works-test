@@ -42,7 +42,8 @@ export class CardUser extends React.Component<Props, State> {
                 <TouchableOpacity onPress={( () =>this.props.onClick(this.props.user))} >
                     <View style={styles.MainRow} >
                         <View style={styles.leftSizeView}>
-                            <Image source={{uri:this.props.user.avatar_url}} style={styles.ImgStyle}/>
+                            <Image source={{uri:this.props.user.avatar_url}}
+                                   style={styles.ImgStyle}/>
 
 
                                 <View style={styles.leftSizeView}>

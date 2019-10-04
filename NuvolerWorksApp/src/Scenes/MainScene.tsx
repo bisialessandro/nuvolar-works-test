@@ -1,11 +1,9 @@
 import React from 'react';
 import {SearchBar} from '../Components/SearchBar';
 import {UserGitHub} from "../Model/UserGitHub";
-import {GitHubServices} from "../Network/GitHubServices";
-import {Animated, FlatList, ImageBackground, SafeAreaView, StyleSheet} from "react-native";
+import {FlatList, ImageBackground, SafeAreaView, StyleSheet} from "react-native";
 import {CardUser} from '../Components/CardComponents/CardUser';
 import { NavigationStackProp } from 'react-navigation-stack';
-import {COLOR_HIGHLIGHT} from "../Styles/Colors";
 const BackgroundApp = require( '../Assets/images/BackgroundApp.png');
 import { connect } from "react-redux";
 import { AppState } from "../store";
@@ -33,7 +31,7 @@ interface State {
     filteredList:Array<UserGitHub>
 }
 
-class MainScene extends React.Component<Props, State,AppProps> {
+class MainScene extends React.PureComponent<Props, State,AppProps> {
     constructor(props: Props) {
         super(props);
 
@@ -47,11 +45,7 @@ class MainScene extends React.Component<Props, State,AppProps> {
 
     async componentDidMount(){
 
-
-        console.log("stampa",this.props.gitHub.users)
         await this.props.thunkFetchUsers("This message was sent by a thunk!");
-        console.log("stampa",this.props.gitHub.users)
-
 
         this.setState({filteredList:this.props.gitHub.users});
         this.setState({listUser:this.props.gitHub.users);
@@ -96,8 +90,6 @@ class MainScene extends React.Component<Props, State,AppProps> {
 
          this.props.setUserDetails(value);
 
-         console.log("detille",this.props.gitHub.userDetails);
-
         this.props.navigation.navigate("DetailUser",{'user':value});
 
     }
@@ -106,7 +98,6 @@ class MainScene extends React.Component<Props, State,AppProps> {
     renderItem = (user:UserGitHub) => <CardUser
         user={user}
         onClick={this.onClick}
-        key={ user.id}
         showArrow={true}
     />
 
@@ -114,8 +105,10 @@ class MainScene extends React.Component<Props, State,AppProps> {
         return (
             <SafeAreaView >
                 <ImageBackground source={BackgroundApp} style={styles.ImageBackground} >
+
                     <SearchBar placeholder={"Insert a username"} callback={this.onChangeText}  />
                     <FlatList<UserGitHub>
+                        keyExtractor={item => item.id+""}
                         data={this.state.filteredList}
                         renderItem={item => this.renderItem(item.item)}
                     />

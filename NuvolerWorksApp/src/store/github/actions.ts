@@ -37,3 +37,11 @@ export function setUserDetails(userDetails:UserGitHub) :SetUSerDetailsAction{
     };
 }
 
+export function setFetchingUser(value:boolean) {
+    return {
+        type: SET_USERDETAILS,
+        payload:value
+    };
+}
+
+

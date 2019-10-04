@@ -1,9 +1,9 @@
+"use strict";
 /**
  * Created by abisi on 2019-06-27
  */
-
-
-export const CONFIG_REDUX_PERSIST = {
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.CONFIG_REDUX_PERSIST = {
     REDUX_CACHE_KEY: 'root',
-    WHITELIST:['checkpoint','chatMedia']
+    WHITELIST: ['gitHubRepo', 'users']
 };

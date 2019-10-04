@@ -29,3 +29,10 @@ function setUserDetails(userDetails) {
     };
 }
 exports.setUserDetails = setUserDetails;
+function setFetchingUser(value) {
+    return {
+        type: types_1.SET_USERDETAILS,
+        payload: value
+    };
+}
+exports.setFetchingUser = setFetchingUser;

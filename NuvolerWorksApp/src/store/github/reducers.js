@@ -18,6 +18,7 @@ var initialState = {
     users: [],
     followers: [],
     userDetails: UserGitHub_1.UserGitHub.prototype,
+    isFetchingUser: false
 };
 function gitHubReducer(state, action) {
     if (state === void 0) { state = initialState; }

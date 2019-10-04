@@ -40,7 +40,7 @@ interface State {
 
 }
 
-class DetailUserPage extends React.Component<Props, State,AppProps> {
+class DetailUserPage extends React.PureComponent<Props, State,AppProps> {
     constructor(props: Props) {
         super(props);
     }
@@ -67,13 +67,15 @@ class DetailUserPage extends React.Component<Props, State,AppProps> {
 
     renderItemUserFlat = () => <FlatList<UserGitHub>
         data={this.props.gitHub.followers}
-        renderItem={item => this.renderItemUser(item.item)} />
+        renderItem={item => this.renderItemUser(item.item)}
+        keyExtractor={item => item.id+""}/>
 
     renderItemRepository = (item:Repository) =><CardRepository repository={item} />
 
     renderItemRepositoryFlat = () =><FlatList<Repository>
             data={this.props.gitHub.repositories}
             renderItem={item => this.renderItemRepository(item.item)}
+            keyExtractor={item => item.name+""}
         />
 
 

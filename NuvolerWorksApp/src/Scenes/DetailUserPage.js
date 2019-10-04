@@ -69,9 +69,9 @@ var DetailUserPage = /** @class */ (function (_super) {
         _this.onClick = function (value) {
         };
         _this.renderItemUser = function (item) { return react_1.default.createElement(CardUser_1.CardUser, { user: item, onClick: _this.onClick, showArrow: false }); };
-        _this.renderItemUserFlat = function () { return react_1.default.createElement(react_native_1.FlatList, { data: _this.props.gitHub.followers, renderItem: function (item) { return _this.renderItemUser(item.item); } }); };
+        _this.renderItemUserFlat = function () { return react_1.default.createElement(react_native_1.FlatList, { data: _this.props.gitHub.followers, renderItem: function (item) { return _this.renderItemUser(item.item); }, keyExtractor: function (item) { return item.id + ""; } }); };
         _this.renderItemRepository = function (item) { return react_1.default.createElement(CardRepository_1.CardRepository, { repository: item }); };
-        _this.renderItemRepositoryFlat = function () { return react_1.default.createElement(react_native_1.FlatList, { data: _this.props.gitHub.repositories, renderItem: function (item) { return _this.renderItemRepository(item.item); } }); };
+        _this.renderItemRepositoryFlat = function () { return react_1.default.createElement(react_native_1.FlatList, { data: _this.props.gitHub.repositories, renderItem: function (item) { return _this.renderItemRepository(item.item); }, keyExtractor: function (item) { return item.name + ""; } }); };
         return _this;
     }
     DetailUserPage.prototype.componentDidMount = function () {
@@ -103,7 +103,7 @@ var DetailUserPage = /** @class */ (function (_super) {
                         react_1.default.createElement(ShowHiddenComponent_1.ShowHiddenComponent, { renderItem: this.renderItemRepositoryFlat, title: "Repositories:" }))))));
     };
     return DetailUserPage;
-}(react_1.default.Component));
+}(react_1.default.PureComponent));
 exports.styles = react_native_1.StyleSheet.create({
     ImageBackground: {
         width: '100%',

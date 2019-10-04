@@ -85,10 +85,9 @@ var MainScene = /** @class */ (function (_super) {
         };
         _this.onClick = function (value) {
             _this.props.setUserDetails(value);
-            console.log("detille", _this.props.gitHub.userDetails);
             _this.props.navigation.navigate("DetailUser", { 'user': value });
         };
-        _this.renderItem = function (user) { return react_1.default.createElement(CardUser_1.CardUser, { user: user, onClick: _this.onClick, key: user.id, showArrow: true }); };
+        _this.renderItem = function (user) { return react_1.default.createElement(CardUser_1.CardUser, { user: user, onClick: _this.onClick, showArrow: true }); };
         _this.state = {
             listUser: [],
             filteredList: []
@@ -99,12 +98,9 @@ var MainScene = /** @class */ (function (_super) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0:
-                        console.log("stampa", this.props.gitHub.users);
-                        return [4 /*yield*/, this.props.thunkFetchUsers("This message was sent by a thunk!")];
+                    case 0: return [4 /*yield*/, this.props.thunkFetchUsers("This message was sent by a thunk!")];
                     case 1:
                         _a.sent();
-                        console.log("stampa", this.props.gitHub.users);
                         this.setState({ filteredList: this.props.gitHub.users });
                         this.setState({ listUser: this.props.gitHub.users });
                         return [2 /*return*/];
@@ -117,10 +113,10 @@ var MainScene = /** @class */ (function (_super) {
         return (react_1.default.createElement(react_native_1.SafeAreaView, null,
             react_1.default.createElement(react_native_1.ImageBackground, { source: BackgroundApp, style: exports.styles.ImageBackground },
                 react_1.default.createElement(SearchBar_1.SearchBar, { placeholder: "Insert a username", callback: this.onChangeText }),
-                react_1.default.createElement(react_native_1.FlatList, { data: this.state.filteredList, renderItem: function (item) { return _this.renderItem(item.item); } }))));
+                react_1.default.createElement(react_native_1.FlatList, { keyExtractor: function (item) { return item.id + ""; }, data: this.state.filteredList, renderItem: function (item) { return _this.renderItem(item.item); } }))));
     };
     return MainScene;
-}(react_1.default.Component));
+}(react_1.default.PureComponent));
 exports.styles = react_native_1.StyleSheet.create({
     ImageBackground: {
         width: '100%',

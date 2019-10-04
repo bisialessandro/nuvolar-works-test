@@ -1,12 +1,13 @@
 import {, GitHubActionTypes, GitHubState} from "./types";
 import {UserGitHub} from "../../Model/UserGitHub";
-import {SET_FOLLOWERS, SET_REPOSITORIES, SET_USERDETAILS, SET_USERS} from "./types";
+import {SET_FOLLOWERS, SET_REPOSITORIES, SET_USERDETAILS, SET_USERS,SET_ISFETCHING_USER} from "./types";
 
 const initialState:GitHubState = {
     repositories:[],
     users:[],
     followers:[],
     userDetails:UserGitHub.prototype,
+    isFetchingUser:false
 };
 
 export function gitHubReducer(
@@ -34,6 +35,7 @@ export function gitHubReducer(
                 ...state,
                 userDetails: action.payload
             };
+
         default:
             return state;
     }
