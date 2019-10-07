@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* NuvolerWorksAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* NuvolerWorksAppTests.m */; };
+		00E356F31AD99517003FC87E /* NuvolarWorksAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* NuvolarWorksAppTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -15,11 +15,11 @@
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2DCD954D1E0B4F2C00145EB5 /* NuvolerWorksAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* NuvolerWorksAppTests.m */; };
-		4EEE423B969BAF0AFDD425B3 /* libPods-NuvolerWorksApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF53DDDD7295962D6B10C8B /* libPods-NuvolerWorksApp.a */; };
-		5C4BA0EEBA8B393B9C9E86A2 /* libPods-NuvolerWorksApp-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE82C8EF9D24167EF07307C /* libPods-NuvolerWorksApp-tvOS.a */; };
-		A63607F7A8B15D21F71F4413 /* libPods-NuvolerWorksAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 254BCE3B81C4F3A6BC702D75 /* libPods-NuvolerWorksAppTests.a */; };
-		AFD99FE5ECD4CF55394C1521 /* libPods-NuvolerWorksApp-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBEBDF71EBD97DF53C0F216E /* libPods-NuvolerWorksApp-tvOSTests.a */; };
+		2DCD954D1E0B4F2C00145EB5 /* NuvolarWorksAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* NuvolarWorksAppTests.m */; };
+		4EEE423B969BAF0AFDD425B3 /* libPods-NuvolarWorksApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF53DDDD7295962D6B10C8B /* libPods-NuvolarWorksApp.a */; };
+		5C4BA0EEBA8B393B9C9E86A2 /* libPods-NuvolarWorksApp-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE82C8EF9D24167EF07307C /* libPods-NuvolarWorksApp-tvOS.a */; };
+		A63607F7A8B15D21F71F4413 /* libPods-NuvolarWorksAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 254BCE3B81C4F3A6BC702D75 /* libPods-NuvolarWorksAppTests.a */; };
+		AFD99FE5ECD4CF55394C1521 /* libPods-NuvolarWorksApp-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBEBDF71EBD97DF53C0F216E /* libPods-NuvolarWorksApp-tvOSTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,43 +28,43 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = NuvolerWorksApp;
+			remoteInfo = NuvolarWorksApp;
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "NuvolerWorksApp-tvOS";
+			remoteInfo = "NuvolarWorksApp-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* NuvolerWorksAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NuvolerWorksAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* NuvolarWorksAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NuvolarWorksAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* NuvolerWorksAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NuvolerWorksAppTests.m; sourceTree = "<group>"; };
-		127FDDFB4155E72FA45BC5D6 /* Pods-NuvolerWorksApp-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NuvolerWorksApp-tvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NuvolerWorksApp-tvOSTests/Pods-NuvolerWorksApp-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* NuvolerWorksApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NuvolerWorksApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = NuvolerWorksApp/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = NuvolerWorksApp/AppDelegate.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* NuvolarWorksAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NuvolarWorksAppTests.m; sourceTree = "<group>"; };
+		127FDDFB4155E72FA45BC5D6 /* Pods-NuvolarWorksApp-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NuvolarWorksApp-tvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NuvolarWorksApp-tvOSTests/Pods-NuvolarWorksApp-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* NuvolarWorksApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NuvolarWorksApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = NuvolarWorksApp/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = NuvolarWorksApp/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = NuvolerWorksApp/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = NuvolerWorksApp/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = NuvolerWorksApp/main.m; sourceTree = "<group>"; };
-		15FA6141CE7EF388868831E7 /* Pods-NuvolerWorksApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NuvolerWorksApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-NuvolerWorksApp/Pods-NuvolerWorksApp.release.xcconfig"; sourceTree = "<group>"; };
-		20B57B6792B7AC6903BEA109 /* Pods-NuvolerWorksApp-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NuvolerWorksApp-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NuvolerWorksApp-tvOS/Pods-NuvolerWorksApp-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		254BCE3B81C4F3A6BC702D75 /* libPods-NuvolerWorksAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NuvolerWorksAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E47B1E0B4A5D006451C7 /* NuvolerWorksApp-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NuvolerWorksApp-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* NuvolerWorksApp-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NuvolerWorksApp-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BF53DDDD7295962D6B10C8B /* libPods-NuvolerWorksApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NuvolerWorksApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4186FEDC991F253CB0DD0203 /* Pods-NuvolerWorksAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NuvolerWorksAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NuvolerWorksAppTests/Pods-NuvolerWorksAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		8C0B3D79B847812362A3E67D /* Pods-NuvolerWorksApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NuvolerWorksApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NuvolerWorksApp/Pods-NuvolerWorksApp.debug.xcconfig"; sourceTree = "<group>"; };
-		8D59DFC8C07DD808A679F2D9 /* Pods-NuvolerWorksApp-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NuvolerWorksApp-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-NuvolerWorksApp-tvOS/Pods-NuvolerWorksApp-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		BFE82C8EF9D24167EF07307C /* libPods-NuvolerWorksApp-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NuvolerWorksApp-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBEBDF71EBD97DF53C0F216E /* libPods-NuvolerWorksApp-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NuvolerWorksApp-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4C71927A5AC9DD4C613DFD7 /* Pods-NuvolerWorksApp-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NuvolerWorksApp-tvOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NuvolerWorksApp-tvOSTests/Pods-NuvolerWorksApp-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		D8D28C316EDF7ABC325F30E7 /* Pods-NuvolerWorksAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NuvolerWorksAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NuvolerWorksAppTests/Pods-NuvolerWorksAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = NuvolarWorksApp/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = NuvolarWorksApp/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = NuvolarWorksApp/main.m; sourceTree = "<group>"; };
+		15FA6141CE7EF388868831E7 /* Pods-NuvolarWorksApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NuvolarWorksApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-NuvolarWorksApp/Pods-NuvolarWorksApp.release.xcconfig"; sourceTree = "<group>"; };
+		20B57B6792B7AC6903BEA109 /* Pods-NuvolarWorksApp-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NuvolarWorksApp-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NuvolarWorksApp-tvOS/Pods-NuvolarWorksApp-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		254BCE3B81C4F3A6BC702D75 /* libPods-NuvolarWorksAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NuvolarWorksAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E47B1E0B4A5D006451C7 /* NuvolarWorksApp-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NuvolarWorksApp-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* NuvolarWorksApp-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NuvolarWorksApp-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BF53DDDD7295962D6B10C8B /* libPods-NuvolarWorksApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NuvolarWorksApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4186FEDC991F253CB0DD0203 /* Pods-NuvolarWorksAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NuvolarWorksAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NuvolarWorksAppTests/Pods-NuvolarWorksAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8C0B3D79B847812362A3E67D /* Pods-NuvolarWorksApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NuvolarWorksApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NuvolarWorksApp/Pods-NuvolarWorksApp.debug.xcconfig"; sourceTree = "<group>"; };
+		8D59DFC8C07DD808A679F2D9 /* Pods-NuvolarWorksApp-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NuvolarWorksApp-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-NuvolarWorksApp-tvOS/Pods-NuvolarWorksApp-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		BFE82C8EF9D24167EF07307C /* libPods-NuvolarWorksApp-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NuvolarWorksApp-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBEBDF71EBD97DF53C0F216E /* libPods-NuvolarWorksApp-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NuvolarWorksApp-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4C71927A5AC9DD4C613DFD7 /* Pods-NuvolarWorksApp-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NuvolarWorksApp-tvOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NuvolarWorksApp-tvOSTests/Pods-NuvolarWorksApp-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		D8D28C316EDF7ABC325F30E7 /* Pods-NuvolarWorksAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NuvolarWorksAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NuvolarWorksAppTests/Pods-NuvolarWorksAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A63607F7A8B15D21F71F4413 /* libPods-NuvolerWorksAppTests.a in Frameworks */,
+				A63607F7A8B15D21F71F4413 /* libPods-NuvolarWorksAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EEE423B969BAF0AFDD425B3 /* libPods-NuvolerWorksApp.a in Frameworks */,
+				4EEE423B969BAF0AFDD425B3 /* libPods-NuvolarWorksApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C4BA0EEBA8B393B9C9E86A2 /* libPods-NuvolerWorksApp-tvOS.a in Frameworks */,
+				5C4BA0EEBA8B393B9C9E86A2 /* libPods-NuvolarWorksApp-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,20 +98,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFD99FE5ECD4CF55394C1521 /* libPods-NuvolerWorksApp-tvOSTests.a in Frameworks */,
+				AFD99FE5ECD4CF55394C1521 /* libPods-NuvolarWorksApp-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* NuvolerWorksAppTests */ = {
+		00E356EF1AD99517003FC87E /* NuvolarWorksAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* NuvolerWorksAppTests.m */,
+				00E356F21AD99517003FC87E /* NuvolarWorksAppTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = NuvolerWorksAppTests;
+			path = NuvolarWorksAppTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -122,7 +122,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* NuvolerWorksApp */ = {
+		13B07FAE1A68108700A75B9A /* NuvolarWorksApp */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -133,7 +133,7 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = NuvolerWorksApp;
+			name = NuvolarWorksApp;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -141,10 +141,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				3BF53DDDD7295962D6B10C8B /* libPods-NuvolerWorksApp.a */,
-				BFE82C8EF9D24167EF07307C /* libPods-NuvolerWorksApp-tvOS.a */,
-				CBEBDF71EBD97DF53C0F216E /* libPods-NuvolerWorksApp-tvOSTests.a */,
-				254BCE3B81C4F3A6BC702D75 /* libPods-NuvolerWorksAppTests.a */,
+				3BF53DDDD7295962D6B10C8B /* libPods-NuvolarWorksApp.a */,
+				BFE82C8EF9D24167EF07307C /* libPods-NuvolarWorksApp-tvOS.a */,
+				CBEBDF71EBD97DF53C0F216E /* libPods-NuvolarWorksApp-tvOSTests.a */,
+				254BCE3B81C4F3A6BC702D75 /* libPods-NuvolarWorksAppTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -152,14 +152,14 @@
 		5C86A384100227EC29B9C89A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8C0B3D79B847812362A3E67D /* Pods-NuvolerWorksApp.debug.xcconfig */,
-				15FA6141CE7EF388868831E7 /* Pods-NuvolerWorksApp.release.xcconfig */,
-				20B57B6792B7AC6903BEA109 /* Pods-NuvolerWorksApp-tvOS.debug.xcconfig */,
-				8D59DFC8C07DD808A679F2D9 /* Pods-NuvolerWorksApp-tvOS.release.xcconfig */,
-				127FDDFB4155E72FA45BC5D6 /* Pods-NuvolerWorksApp-tvOSTests.debug.xcconfig */,
-				D4C71927A5AC9DD4C613DFD7 /* Pods-NuvolerWorksApp-tvOSTests.release.xcconfig */,
-				4186FEDC991F253CB0DD0203 /* Pods-NuvolerWorksAppTests.debug.xcconfig */,
-				D8D28C316EDF7ABC325F30E7 /* Pods-NuvolerWorksAppTests.release.xcconfig */,
+				8C0B3D79B847812362A3E67D /* Pods-NuvolarWorksApp.debug.xcconfig */,
+				15FA6141CE7EF388868831E7 /* Pods-NuvolarWorksApp.release.xcconfig */,
+				20B57B6792B7AC6903BEA109 /* Pods-NuvolarWorksApp-tvOS.debug.xcconfig */,
+				8D59DFC8C07DD808A679F2D9 /* Pods-NuvolarWorksApp-tvOS.release.xcconfig */,
+				127FDDFB4155E72FA45BC5D6 /* Pods-NuvolarWorksApp-tvOSTests.debug.xcconfig */,
+				D4C71927A5AC9DD4C613DFD7 /* Pods-NuvolarWorksApp-tvOSTests.release.xcconfig */,
+				4186FEDC991F253CB0DD0203 /* Pods-NuvolarWorksAppTests.debug.xcconfig */,
+				D8D28C316EDF7ABC325F30E7 /* Pods-NuvolarWorksAppTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -174,9 +174,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* NuvolerWorksApp */,
+				13B07FAE1A68108700A75B9A /* NuvolarWorksApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* NuvolerWorksAppTests */,
+				00E356EF1AD99517003FC87E /* NuvolarWorksAppTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				5C86A384100227EC29B9C89A /* Pods */,
@@ -189,10 +189,10 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* NuvolerWorksApp.app */,
-				00E356EE1AD99517003FC87E /* NuvolerWorksAppTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* NuvolerWorksApp-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* NuvolerWorksApp-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* NuvolarWorksApp.app */,
+				00E356EE1AD99517003FC87E /* NuvolarWorksAppTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* NuvolarWorksApp-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* NuvolarWorksApp-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -200,9 +200,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* NuvolerWorksAppTests */ = {
+		00E356ED1AD99517003FC87E /* NuvolarWorksAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "NuvolerWorksAppTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "NuvolarWorksAppTests" */;
 			buildPhases = (
 				FF4EDA1006DFA4DA639F45D1 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -214,14 +214,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = NuvolerWorksAppTests;
-			productName = NuvolerWorksAppTests;
-			productReference = 00E356EE1AD99517003FC87E /* NuvolerWorksAppTests.xctest */;
+			name = NuvolarWorksAppTests;
+			productName = NuvolarWorksAppTests;
+			productReference = 00E356EE1AD99517003FC87E /* NuvolarWorksAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* NuvolerWorksApp */ = {
+		13B07F861A680F5B00A75B9A /* NuvolarWorksApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "NuvolerWorksApp" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "NuvolarWorksApp" */;
 			buildPhases = (
 				F5A6917C8D506E82FFD029B6 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -234,14 +234,14 @@
 			);
 			dependencies = (
 			);
-			name = NuvolerWorksApp;
-			productName = NuvolerWorksApp;
-			productReference = 13B07F961A680F5B00A75B9A /* NuvolerWorksApp.app */;
+			name = NuvolarWorksApp;
+			productName = NuvolarWorksApp;
+			productReference = 13B07F961A680F5B00A75B9A /* NuvolarWorksApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* NuvolerWorksApp-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* NuvolarWorksApp-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "NuvolerWorksApp-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "NuvolarWorksApp-tvOS" */;
 			buildPhases = (
 				551E7C9590ED10C14FC73B48 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
@@ -254,14 +254,14 @@
 			);
 			dependencies = (
 			);
-			name = "NuvolerWorksApp-tvOS";
-			productName = "NuvolerWorksApp-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* NuvolerWorksApp-tvOS.app */;
+			name = "NuvolarWorksApp-tvOS";
+			productName = "NuvolarWorksApp-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* NuvolarWorksApp-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* NuvolerWorksApp-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* NuvolarWorksApp-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "NuvolerWorksApp-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "NuvolarWorksApp-tvOSTests" */;
 			buildPhases = (
 				8AE2CA175F7BE468E0C790E1 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
@@ -273,9 +273,9 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "NuvolerWorksApp-tvOSTests";
-			productName = "NuvolerWorksApp-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* NuvolerWorksApp-tvOSTests.xctest */;
+			name = "NuvolarWorksApp-tvOSTests";
+			productName = "NuvolarWorksApp-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* NuvolarWorksApp-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -302,7 +302,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "NuvolerWorksApp" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "NuvolarWorksApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -315,10 +315,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* NuvolerWorksApp */,
-				00E356ED1AD99517003FC87E /* NuvolerWorksAppTests */,
-				2D02E47A1E0B4A5D006451C7 /* NuvolerWorksApp-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* NuvolerWorksApp-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* NuvolarWorksApp */,
+				00E356ED1AD99517003FC87E /* NuvolarWorksAppTests */,
+				2D02E47A1E0B4A5D006451C7 /* NuvolarWorksApp-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* NuvolarWorksApp-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -397,7 +397,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NuvolerWorksApp-tvOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-NuvolarWorksApp-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -415,7 +415,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NuvolerWorksApp-tvOSTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-NuvolarWorksApp-tvOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -433,7 +433,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NuvolerWorksApp-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-NuvolarWorksApp-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -481,7 +481,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NuvolerWorksAppTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-NuvolarWorksAppTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -495,7 +495,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* NuvolerWorksAppTests.m in Sources */,
+				00E356F31AD99517003FC87E /* NuvolarWorksAppTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,7 +521,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD954D1E0B4F2C00145EB5 /* NuvolerWorksAppTests.m in Sources */,
+				2DCD954D1E0B4F2C00145EB5 /* NuvolarWorksAppTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,12 +530,12 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* NuvolerWorksApp */;
+			target = 13B07F861A680F5B00A75B9A /* NuvolarWorksApp */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* NuvolerWorksApp-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* NuvolarWorksApp-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -547,7 +547,7 @@
 				13B07FB21A68108700A75B9A /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = NuvolerWorksApp;
+			path = NuvolarWorksApp;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -555,14 +555,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4186FEDC991F253CB0DD0203 /* Pods-NuvolerWorksAppTests.debug.xcconfig */;
+			baseConfigurationReference = 4186FEDC991F253CB0DD0203 /* Pods-NuvolarWorksAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = NuvolerWorksAppTests/Info.plist;
+				INFOPLIST_FILE = NuvolarWorksAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -572,17 +572,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NuvolerWorksApp.app/NuvolerWorksApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NuvolarWorksApp.app/NuvolarWorksApp";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D8D28C316EDF7ABC325F30E7 /* Pods-NuvolerWorksAppTests.release.xcconfig */;
+			baseConfigurationReference = D8D28C316EDF7ABC325F30E7 /* Pods-NuvolarWorksAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = NuvolerWorksAppTests/Info.plist;
+				INFOPLIST_FILE = NuvolarWorksAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -592,18 +592,18 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NuvolerWorksApp.app/NuvolerWorksApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NuvolarWorksApp.app/NuvolarWorksApp";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8C0B3D79B847812362A3E67D /* Pods-NuvolerWorksApp.debug.xcconfig */;
+			baseConfigurationReference = 8C0B3D79B847812362A3E67D /* Pods-NuvolarWorksApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				INFOPLIST_FILE = NuvolerWorksApp/Info.plist;
+				INFOPLIST_FILE = NuvolarWorksApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -611,18 +611,18 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = NuvolerWorksApp;
+				PRODUCT_NAME = NuvolarWorksApp;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 15FA6141CE7EF388868831E7 /* Pods-NuvolerWorksApp.release.xcconfig */;
+			baseConfigurationReference = 15FA6141CE7EF388868831E7 /* Pods-NuvolarWorksApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = NuvolerWorksApp/Info.plist;
+				INFOPLIST_FILE = NuvolarWorksApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -630,14 +630,14 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = NuvolerWorksApp;
+				PRODUCT_NAME = NuvolarWorksApp;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 20B57B6792B7AC6903BEA109 /* Pods-NuvolerWorksApp-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 20B57B6792B7AC6903BEA109 /* Pods-NuvolarWorksApp-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -648,14 +648,14 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "NuvolerWorksApp-tvOS/Info.plist";
+				INFOPLIST_FILE = "NuvolarWorksApp-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.NuvolerWorksApp-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.NuvolarWorksApp-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -665,7 +665,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D59DFC8C07DD808A679F2D9 /* Pods-NuvolerWorksApp-tvOS.release.xcconfig */;
+			baseConfigurationReference = 8D59DFC8C07DD808A679F2D9 /* Pods-NuvolarWorksApp-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -676,14 +676,14 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "NuvolerWorksApp-tvOS/Info.plist";
+				INFOPLIST_FILE = "NuvolarWorksApp-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.NuvolerWorksApp-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.NuvolarWorksApp-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -693,7 +693,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 127FDDFB4155E72FA45BC5D6 /* Pods-NuvolerWorksApp-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 127FDDFB4155E72FA45BC5D6 /* Pods-NuvolarWorksApp-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -703,24 +703,24 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "NuvolerWorksApp-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "NuvolarWorksApp-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.NuvolerWorksApp-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.NuvolarWorksApp-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NuvolerWorksApp-tvOS.app/NuvolerWorksApp-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NuvolarWorksApp-tvOS.app/NuvolarWorksApp-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4C71927A5AC9DD4C613DFD7 /* Pods-NuvolerWorksApp-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = D4C71927A5AC9DD4C613DFD7 /* Pods-NuvolarWorksApp-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -730,17 +730,17 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "NuvolerWorksApp-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "NuvolarWorksApp-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.NuvolerWorksApp-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.NuvolarWorksApp-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NuvolerWorksApp-tvOS.app/NuvolerWorksApp-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NuvolarWorksApp-tvOS.app/NuvolarWorksApp-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -847,7 +847,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "NuvolerWorksAppTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "NuvolarWorksAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -856,7 +856,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "NuvolerWorksApp" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "NuvolarWorksApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -865,7 +865,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "NuvolerWorksApp-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "NuvolarWorksApp-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -874,7 +874,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "NuvolerWorksApp-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "NuvolarWorksApp-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -883,7 +883,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "NuvolerWorksApp" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "NuvolarWorksApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

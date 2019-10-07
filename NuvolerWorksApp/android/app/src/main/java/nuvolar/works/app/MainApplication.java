@@ -1,4 +1,4 @@
-package com.nuvolerworksapp;
+package nuvolar.works.app;
 
 import android.app.Application;
 import android.content.Context;

@@ -3,20 +3,34 @@
   <component name="ChangeListManager">
     <list default="true" id="7394f5d7-b051-41ac-8cdb-75674d794857" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Components/CardComponents/CardUser.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Components/CardComponents/CardUser.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Config/config.redux.persist.js" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Config/config.redux.persist.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/DetailUserPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/DetailUserPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/DetailUserPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/DetailUserPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/MainScene.js" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/MainScene.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/MainScene.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/Scenes/MainScene.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/store/github/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/store/github/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/store/github/actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/store/github/actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/store/github/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/store/github/reducers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/store/github/reducers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/store/github/reducers.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/store/github/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/store/github/types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/store/github/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/store/github/types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/src/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/src/store/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/android/app/BUCK" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/android/app/BUCK" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/android/app/src/main/java/com/nuvolerworksapp/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/android/app/src/main/java/nuvolar/works/app/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/android/app/src/main/java/com/nuvolerworksapp/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/android/app/src/main/java/nuvolar/works/app/MainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/android/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/android/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/android/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/android/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/ios/NuvolerWorksApp-tvOS/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/ios/NuvolarWorksApp-tvOS/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/ios/NuvolerWorksApp-tvOSTests/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/ios/NuvolarWorksApp-tvOSTests/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/ios/NuvolerWorksApp.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/ios/NuvolarWorksApp.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/ios/NuvolerWorksApp.xcodeproj/xcshareddata/xcschemes/NuvolerWorksApp-tvOS.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/ios/NuvolarWorksApp.xcodeproj/xcshareddata/xcschemes/NuvolarWorksApp-tvOS.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/ios/NuvolerWorksApp.xcodeproj/xcshareddata/xcschemes/NuvolerWorksApp.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/ios/NuvolarWorksApp.xcodeproj/xcshareddata/xcschemes/NuvolarWorksApp.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/ios/NuvolerWorksApp.xcworkspace/contents.xcworkspacedata" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/ios/NuvolarWorksApp.xcworkspace/contents.xcworkspacedata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/ios/NuvolerWorksApp.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/ios/NuvolarWorksApp.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/ios/NuvolerWorksApp/AppDelegate.h" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/ios/NuvolarWorksApp/AppDelegate.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/ios/NuvolerWorksApp/AppDelegate.m" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/ios/NuvolarWorksApp/AppDelegate.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/ios/NuvolerWorksApp/Base.lproj/LaunchScreen.xib" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/ios/NuvolarWorksApp/Base.lproj/LaunchScreen.xib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/ios/NuvolerWorksApp/Images.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/ios/NuvolarWorksApp/Images.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/ios/NuvolerWorksApp/Images.xcassets/Contents.json" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/ios/NuvolarWorksApp/Images.xcassets/Contents.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/ios/NuvolerWorksApp/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/ios/NuvolarWorksApp/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/ios/NuvolerWorksApp/main.m" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/ios/NuvolarWorksApp/main.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/ios/NuvolerWorksAppTests/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/ios/NuvolarWorksAppTests/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/ios/NuvolerWorksAppTests/NuvolerWorksAppTests.m" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/ios/NuvolarWorksAppTests/NuvolarWorksAppTests.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/ios/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/ios/Podfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/ios/Podfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolerWorksApp/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolerWorksApp/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
