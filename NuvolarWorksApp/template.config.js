@@ -1,4 +1,4 @@
 module.exports = {
-  placeholderName: 'NuvolerWorksApp',
+  placeholderName: 'NuvolarWorksApp',
   templateDir: './template',
 }
