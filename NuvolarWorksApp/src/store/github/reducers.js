@@ -31,6 +31,8 @@ function gitHubReducer(state, action) {
             return __assign(__assign({}, state), { followers: action.payload });
         case types_1.SET_USERDETAILS:
             return __assign(__assign({}, state), { userDetails: action.payload });
+        case types_1.SET_ISFETCHING_USER:
+            return __assign(__assign({}, state), { isFetchingUser: action.payload });
         default:
             return state;
     }

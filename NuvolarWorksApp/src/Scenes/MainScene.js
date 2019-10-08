@@ -90,15 +90,23 @@ var MainScene = /** @class */ (function (_super) {
         _this.renderItem = function (user) { return react_1.default.createElement(CardUser_1.CardUser, { user: user, onClick: _this.onClick, showArrow: true }); };
         _this.state = {
             listUser: [],
-            filteredList: []
+            filteredList: [],
         };
         return _this;
     }
     MainScene.prototype.componentDidMount = function () {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
+                this.fetchGitHubUsers("q=language:java");
+                return [2 /*return*/];
+            });
+        });
+    };
+    MainScene.prototype.fetchGitHubUsers = function (params) {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, this.props.thunkFetchUsers("This message was sent by a thunk!")];
+                    case 0: return [4 /*yield*/, this.props.thunkFetchUsers(params)];
                     case 1:
                         _a.sent();
                         this.setState({ filteredList: this.props.gitHub.users });
@@ -113,7 +121,7 @@ var MainScene = /** @class */ (function (_super) {
         return (react_1.default.createElement(react_native_1.SafeAreaView, null,
             react_1.default.createElement(react_native_1.ImageBackground, { source: BackgroundApp, style: exports.styles.ImageBackground },
                 react_1.default.createElement(SearchBar_1.SearchBar, { placeholder: "Insert a username", callback: this.onChangeText }),
-                react_1.default.createElement(react_native_1.FlatList, { keyExtractor: function (item) { return item.id + ""; }, data: this.state.filteredList, renderItem: function (item) { return _this.renderItem(item.item); } }))));
+                react_1.default.createElement(react_native_1.FlatList, { keyExtractor: function (item) { return item.id + ""; }, data: this.state.filteredList, renderItem: function (item) { return _this.renderItem(item.item); }, onRefresh: function () { return _this.fetchGitHubUsers("q=language:typescript"); }, refreshing: this.props.gitHub.isFetchingUser }))));
     };
     return MainScene;
 }(react_1.default.PureComponent));

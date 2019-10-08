@@ -3,17 +3,20 @@ import { ThunkAction } from "redux-thunk";
 import { sendMessage } from "./chat/actions";
 import { AppState } from "./index";
 import {GitHubServices} from "../Network/GitHubServices";
-import {setFollowers, setRepositories, setUsers} from "./github/actions";
+import {setFollowers, setIsFetchingUser, setRepositories, setUsers} from "./github/actions";
 
 export const thunkFetchUsers = (
     param: string
 ): ThunkAction<void, AppState, null, Action<string>> => async dispatch => {
-    const asyncResp = await GitHubServices.prototype.getUsers("q=language:typeScript");
+    dispatch(setIsFetchingUser(true));
+    const asyncResp = await GitHubServices.prototype.getUsers(param);
     console.log("asyncRespo",asyncResp);
     if(asyncResp!=null){
         dispatch(
             setUsers( asyncResp)
         );
+
+        dispatch(setIsFetchingUser(false));
     }
 };
 

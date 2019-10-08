@@ -21,6 +21,11 @@ export interface SetUSerDetailsAction {
     payload: UserGitHub;
 }
 
+export interface SetIsFetchingUser {
+    type: typeof SET_ISFETCHING_USER;
+    payload:boolean;
+}
+
 export interface SetUSerAction {
     type: typeof SET_USERS;
     payload: Array<UserGitHub>;
@@ -37,4 +42,4 @@ export interface SetFollowersAction {
     payload: Array<UserGitHub>;
 }
 
-export type GitHubActionTypes = SetUSerAction | SetRepositoriesAction |SetFollowersAction|SetUSerDetailsAction ;
+export type GitHubActionTypes = SetUSerAction | SetRepositoriesAction |SetFollowersAction|SetUSerDetailsAction | SetIsFetchingUser;

@@ -1,12 +1,17 @@
 import {
-
+    SET_FOLLOWERS,
+    SET_ISFETCHING_USER,
+    SET_REPOSITORIES,
+    SET_USERDETAILS,
+    SET_USERS,
     SetFollowersAction,
+    SetIsFetchingUser,
     SetRepositoriesAction,
-    SetUSerAction, SET_FOLLOWERS, SET_REPOSITORIES, SET_USERS, SetUSerDetailsAction, SET_USERDETAILS
+    SetUSerAction,
+    SetUSerDetailsAction
 } from "./types";
 import {Repository} from "../../Model/Repository";
 import {UserGitHub} from "../../Model/UserGitHub";
-import {GitHubServices} from "../../Network/GitHubServices";
 
 export function setRepositories(user:Array<Repository>) :SetRepositoriesAction {
     return {
@@ -37,9 +42,9 @@ export function setUserDetails(userDetails:UserGitHub) :SetUSerDetailsAction{
     };
 }
 
-export function setFetchingUser(value:boolean) {
+export function setIsFetchingUser(value:boolean): SetIsFetchingUser {
     return {
-        type: SET_USERDETAILS,
+        type: SET_ISFETCHING_USER,
         payload:value
     };
 }

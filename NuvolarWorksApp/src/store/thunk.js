@@ -42,12 +42,15 @@ exports.thunkFetchUsers = function (param) { return function (dispatch) { return
     var asyncResp;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4 /*yield*/, GitHubServices_1.GitHubServices.prototype.getUsers("q=language:typeScript")];
+            case 0:
+                dispatch(actions_1.setIsFetchingUser(true));
+                return [4 /*yield*/, GitHubServices_1.GitHubServices.prototype.getUsers(param)];
             case 1:
                 asyncResp = _a.sent();
                 console.log("asyncRespo", asyncResp);
                 if (asyncResp != null) {
                     dispatch(actions_1.setUsers(asyncResp));
+                    dispatch(actions_1.setIsFetchingUser(false));
                 }
                 return [2 /*return*/];
         }

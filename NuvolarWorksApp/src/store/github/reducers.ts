@@ -18,7 +18,7 @@ export function gitHubReducer(
         case SET_USERS:
             return {
                 ...state,
-                users: action.payload
+                users: action.payload,
             };
         case SET_REPOSITORIES:
             return {
@@ -35,7 +35,11 @@ export function gitHubReducer(
                 ...state,
                 userDetails: action.payload
             };
-
+        case SET_ISFETCHING_USER:
+            return {
+                ...state,
+                isFetchingUser:action.payload
+            };
         default:
             return state;
     }

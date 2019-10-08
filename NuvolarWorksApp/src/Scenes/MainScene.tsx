@@ -28,7 +28,8 @@ interface AppProps{
 interface State {
 
     listUser: Array<UserGitHub>;
-    filteredList:Array<UserGitHub>
+    filteredList:Array<UserGitHub>;
+
 }
 
 class MainScene extends React.PureComponent<Props, State,AppProps> {
@@ -38,20 +39,26 @@ class MainScene extends React.PureComponent<Props, State,AppProps> {
 
         this.state = {
             listUser:[],
-            filteredList:[]
+            filteredList:[],
         };
 
     }
 
     async componentDidMount(){
 
-        await this.props.thunkFetchUsers("This message was sent by a thunk!");
-
-        this.setState({filteredList:this.props.gitHub.users});
-        this.setState({listUser:this.props.gitHub.users);
+        this.fetchGitHubUsers("q=language:java");
 
     }
 
+    async fetchGitHubUsers(params :string)
+    {
+        await this.props.thunkFetchUsers(params);
+
+        this.setState({filteredList:this.props.gitHub.users});
+
+        this.setState({listUser:this.props.gitHub.users});
+
+    }
 
     filterUser = (value:string) => {
 
@@ -90,7 +97,7 @@ class MainScene extends React.PureComponent<Props, State,AppProps> {
 
          this.props.setUserDetails(value);
 
-        this.props.navigation.navigate("DetailUser",{'user':value});
+         this.props.navigation.navigate("DetailUser",{'user':value});
 
     }
 
@@ -111,6 +118,8 @@ class MainScene extends React.PureComponent<Props, State,AppProps> {
                         keyExtractor={item => item.id+""}
                         data={this.state.filteredList}
                         renderItem={item => this.renderItem(item.item)}
+                        onRefresh={ () => this.fetchGitHubUsers("q=language:typescript")}
+                        refreshing={this.props.gitHub.isFetchingUser}
                     />
                 </ImageBackground>
             </SafeAreaView>
