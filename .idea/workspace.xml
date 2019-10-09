@@ -3,15 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="7394f5d7-b051-41ac-8cdb-75674d794857" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolarWorksApp/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolarWorksApp/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolarWorksApp/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolarWorksApp/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolarWorksApp/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolarWorksApp/ios/Podfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolarWorksApp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolarWorksApp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolarWorksApp/src/Config/config.redux.persist.js" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolarWorksApp/src/Config/config.redux.persist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolarWorksApp/src/Config/config.redux.persist.ts" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolarWorksApp/src/Config/config.redux.persist.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NuvolarWorksApp/src/Scenes/MainScene.js" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolarWorksApp/src/Scenes/MainScene.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NuvolarWorksApp/src/Scenes/MainScene.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolarWorksApp/src/Scenes/MainScene.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolarWorksApp/src/store/github/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolarWorksApp/src/store/github/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolarWorksApp/src/store/github/actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolarWorksApp/src/store/github/actions.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NuvolarWorksApp/src/store/github/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolarWorksApp/src/store/github/reducers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NuvolarWorksApp/src/store/github/reducers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolarWorksApp/src/store/github/reducers.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolarWorksApp/src/store/github/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolarWorksApp/src/store/github/types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolarWorksApp/src/store/thunk.js" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolarWorksApp/src/store/thunk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NuvolarWorksApp/src/store/thunk.ts" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolarWorksApp/src/store/thunk.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolarWorksApp/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolarWorksApp/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolarWorksApp/src/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolarWorksApp/src/store/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NuvolarWorksApp/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/NuvolarWorksApp/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -112,9 +116,9 @@
     </configuration>
     <list>
       <item itemvalue="npm.android" />
-      <item itemvalue="npm.ios (1)" />
       <item itemvalue="npm.ios" />
       <item itemvalue="npm.start" />
+      <item itemvalue="npm.ios (1)" />
     </list>
     <recent_temporary>
       <list>

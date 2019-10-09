@@ -106,11 +106,13 @@ var MainScene = /** @class */ (function (_super) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, this.props.thunkFetchUsers(params)];
+                    case 0:
+                        console.log(this.props.github, "user re r ");
+                        return [4 /*yield*/, this.props.thunkFetchUsers(params)];
                     case 1:
                         _a.sent();
-                        this.setState({ filteredList: this.props.gitHub.users });
-                        this.setState({ listUser: this.props.gitHub.users });
+                        this.setState({ filteredList: this.props.github.users });
+                        this.setState({ listUser: this.props.github.users });
                         return [2 /*return*/];
                 }
             });
@@ -121,7 +123,7 @@ var MainScene = /** @class */ (function (_super) {
         return (react_1.default.createElement(react_native_1.SafeAreaView, null,
             react_1.default.createElement(react_native_1.ImageBackground, { source: BackgroundApp, style: exports.styles.ImageBackground },
                 react_1.default.createElement(SearchBar_1.SearchBar, { placeholder: "Insert a username", callback: this.onChangeText }),
-                react_1.default.createElement(react_native_1.FlatList, { keyExtractor: function (item) { return item.id + ""; }, data: this.state.filteredList, renderItem: function (item) { return _this.renderItem(item.item); }, onRefresh: function () { return _this.fetchGitHubUsers("q=language:typescript"); }, refreshing: this.props.gitHub.isFetchingUser }))));
+                react_1.default.createElement(react_native_1.FlatList, { keyExtractor: function (item) { return item.id + ""; }, data: this.state.filteredList, renderItem: function (item) { return _this.renderItem(item.item); }, onRefresh: function () { return _this.fetchGitHubUsers("q=language:typescript"); }, refreshing: this.props.github.isFetchingUser }))));
     };
     return MainScene;
 }(react_1.default.PureComponent));
@@ -135,6 +137,6 @@ exports.styles = react_native_1.StyleSheet.create({
     }
 });
 var mapStateToProps = function (state) { return ({
-    gitHub: state.github,
+    github: state.github,
 }); };
 exports.default = react_redux_1.connect(mapStateToProps, { setUserDetails: actions_1.setUserDetails, setUsers: actions_1.setUsers, thunkFetchUsers: thunk_1.thunkFetchUsers })(MainScene);

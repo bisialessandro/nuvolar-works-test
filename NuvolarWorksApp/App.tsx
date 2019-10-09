@@ -7,18 +7,22 @@
  */
 
 import React from 'react';
-import configureStore from "./src/store";
 import { Provider} from 'react-redux';
 import SwitchNavigator from './src/Router/SwitchNavigator';
 import {createAppContainer} from "react-navigation";
-const store = configureStore();
+import {PersistGate} from "redux-persist/integration/react";
+import {store,persistor} from "./src/store";
+
+
 
 const AppNavigator = createAppContainer(SwitchNavigator );
 
 const App: () => React$Node = () => {
   return (
       <Provider store={store}>
-          <AppNavigator/>
+          <PersistGate loading={null} persistor={persistor}>
+             <AppNavigator/>
+          </PersistGate>
       </Provider>
   );
 };

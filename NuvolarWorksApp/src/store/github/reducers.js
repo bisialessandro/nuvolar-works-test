@@ -22,6 +22,7 @@ var initialState = {
 };
 function gitHubReducer(state, action) {
     if (state === void 0) { state = initialState; }
+    console.log(action.type, "action type", action.payload);
     switch (action.type) {
         case types_1.SET_USERS:
             return __assign(__assign({}, state), { users: action.payload });

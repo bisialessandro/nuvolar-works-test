@@ -5,5 +5,5 @@
 
 export const CONFIG_REDUX_PERSIST = {
     REDUX_CACHE_KEY: 'root',
-    WHITELIST:['gitHubRepo','users']
+    WHITELIST:['users']
 };

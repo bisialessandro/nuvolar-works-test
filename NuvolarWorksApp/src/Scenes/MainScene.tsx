@@ -21,7 +21,7 @@ interface Props {
 interface AppProps{
     setUsers:typeof setUsers;
     setUserDetails:typeof setUserDetails;
-    gitHub: GitHubState;
+    github: GitHubState;
     thunkFetchUser: any;
 
 }
@@ -52,11 +52,13 @@ class MainScene extends React.PureComponent<Props, State,AppProps> {
 
     async fetchGitHubUsers(params :string)
     {
+        console.log(this.props.github,"user re r ");
+
         await this.props.thunkFetchUsers(params);
 
-        this.setState({filteredList:this.props.gitHub.users});
+        this.setState({filteredList:this.props.github.users});
 
-        this.setState({listUser:this.props.gitHub.users});
+        this.setState({listUser:this.props.github.users});
 
     }
 
@@ -119,7 +121,7 @@ class MainScene extends React.PureComponent<Props, State,AppProps> {
                         data={this.state.filteredList}
                         renderItem={item => this.renderItem(item.item)}
                         onRefresh={ () => this.fetchGitHubUsers("q=language:typescript")}
-                        refreshing={this.props.gitHub.isFetchingUser}
+                        refreshing={this.props.github.isFetchingUser}
                     />
                 </ImageBackground>
             </SafeAreaView>
@@ -141,7 +143,7 @@ export const styles = StyleSheet.create({
 
 const mapStateToProps = (state: AppState) => ({
 
-    gitHub: state.github,
+    github: state.github,
 
 });
 
