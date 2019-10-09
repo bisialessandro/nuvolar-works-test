@@ -37,6 +37,11 @@ Open the Android folder with Android Studio and build it.
 If not already installed necessary download SDK Build tools >28.
 
 ### Before Run iOS
+You will also need to install the Xcode Command Line Tools. 
+Open Xcode, then choose "Preferences..." from the Xcode menu. 
+
+Go to the Locations panel and install the tools by selecting the most recent version in the Command Line Tools dropdown.
+
 Enter inside the iOS folder and run the command:
 - `pod install  `
 - Open the ios project with Xcode and build it.
