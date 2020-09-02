@@ -2,7 +2,7 @@ import React from "react";
 import {StyleSheet, Text, View} from "react-native";
 import {Repository} from "../../Model/Repository";
 import {COLOR_HIGHLIGHT, COLOR_NEGATIVE, COLOR_TEXT} from "../../Styles/Colors";
-import {FONT_SMALL_SIZE, FONT_TITLE_SIZE, FONT_TITLE_WEIGHT} from "../../Styles/Font.js";
+import {FONT_SMALL_SIZE, FONT_TITLE_SIZE, FONT_TITLE_WEIGHT} from "../../Styles/Font";
 
 interface  Props {
     repository:Repository;

@@ -5,7 +5,7 @@ import {UserGitHub} from "../../Model/UserGitHub";
 import {UtilsImage} from "../../Utils/UtilsImage";
 const emptyAvatar = require('../../Assets/images/EmptyAvatar.jpeg');
 const RightArrow = require('../../Assets/images/RightArrow.png');
-import {FONT_TITLE_WEIGHT} from '../../Styles/Font.js';
+import {FONT_TITLE_WEIGHT} from '../../Styles/Font';
 
 interface Props {
 

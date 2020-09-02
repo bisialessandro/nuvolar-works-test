@@ -7,7 +7,7 @@ export interface GitHubState{
     users:Array<UserGitHub>,
     followers:Array<UserGitHub>,
     userDetails:UserGitHub,
-    isFetchingUser:false
+    isFetchingUser:boolean,
 }
 // Describing the different ACTION NAMES available
 export const SET_USERS = "SET_USERS";
